@@ -8,12 +8,12 @@ export const HeaderComponent = (): JSX.Element => {
 
   return (
     <Navbar bg="dark" variant="dark" fixed="top">
-      <Container className="d-flex flex-column flex-sm-row">
+      <div className="top-nav mx-4">
         <Navbar.Brand className="pointer" onClick={() => setQuery("")}>
           Albums Repository
         </Navbar.Brand>
         <SearchComponent />
-      </Container>
+      </div>
     </Navbar>
   );
 };

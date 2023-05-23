@@ -62,10 +62,12 @@ export const AlbumCardComponent: FC<AlbumComponentInterface> = (props): JSX.Elem
             {spotifyUrl === "" ? null : <SpotifyIconComponent href={spotifyUrl} size={iconSize} onClickHandler={handleOnClick} />}
             {youtubeUrl === "" ? null : <YouTubeIconComponent href={youtubeUrl} size={iconSize} onClickHandler={handleOnClick} />}
           </div>
-          <div>
-            <NoteIcon size={iconSize} />
-            <span className="ms-2">{clicked}</span>
-          </div>
+          {spotifyUrl === "" && youtubeUrl === "" ? null : (
+            <div>
+              <NoteIcon size={iconSize} />
+              <span className="ms-2">{clicked}</span>
+            </div>
+          )}
         </section>
       </Modal.Body>
     </Modal>

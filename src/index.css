@@ -54,9 +54,21 @@ body {
   background-color: rgba(0, 0, 0, 0.05);
 }
 
+.top-nav {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
 /* Media query */
 @media (max-width: 576px) {
   .albums-list {
     padding-top: 9rem;
+  }
+
+  .top-nav {
+    flex-direction: column;
   }
 }
