@@ -21,3 +21,8 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# other
+src/firebase/FirebaseConfig.ts
+src/firebase/FirebaseCRUDComponent.tsx
+src/common/Albums.ts
