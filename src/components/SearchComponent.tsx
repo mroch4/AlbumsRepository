@@ -3,7 +3,7 @@ import { useAppContext } from "../hooks/useAppContext";
 import { useRef } from "react";
 
 export const SearchComponent = (): JSX.Element => {
-  const { query, sorting, setQuery, setSorting } = useAppContext();
+  const { query, setQuery, setSorting } = useAppContext();
 
   const inputRef = useRef<HTMLInputElement>(null);
 

@@ -4,4 +4,4 @@ Typescript based React App to manage and organize collection of my favorite musi
 
 ## Page URL:
 
-https://mroch4.github.io/AlbumRepository2/
+https://mroch4.github.io/AlbumsRepository/
