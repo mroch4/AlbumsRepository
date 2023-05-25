@@ -12,7 +12,7 @@ body {
 }
 
 .shadow {
-  border-radius: 0.5rem;
+  border: 1px solid #aaa;
 }
 
 /* Custom */
@@ -24,14 +24,14 @@ body {
 }
 
 .album-cover:hover {
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+  -webkit-transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .albums-list {
   min-height: 100vh;
   padding-bottom: 2.5rem;
-  padding-top: 6.5rem;
+  padding-top: 6.25rem;
 }
 
 .pointer {
@@ -59,7 +59,7 @@ body {
 /* Media query */
 @media (max-width: 576px) {
   .albums-list {
-    padding-top: 9rem;
+    padding-top: 8.6rem;
   }
 
   .top-nav {

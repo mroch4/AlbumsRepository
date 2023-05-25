@@ -1,5 +1,5 @@
-import { AlbumInterface } from "./AlbumInterface";
-import { Sorting } from "../SortingEnum";
+import { AlbumInterface } from "../../common/AlbumInterface";
+import { Sorting } from "../../common/SortingEnum";
 
 export interface ContextInterface {
   albums: AlbumInterface[];

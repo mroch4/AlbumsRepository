@@ -13,7 +13,7 @@ export const ListComponent = (): JSX.Element => {
         <LoaderComponent />
       ) : (
         <React.Fragment>
-          <section className="d-flex flex-wrap align-content-start albums-list mx-3">
+          <section className="d-flex flex-wrap align-content-start albums-list mx-2">
             {albums.map((item) => (
               <AlbumCoverComponent data={item} key={item.cover} />
             ))}

@@ -48,6 +48,7 @@ export const AlbumCoverComponent: FC<AlbumComponentInterface> = (props): JSX.Ele
       alt={desc}
       className="album-cover pointer"
       height={`${imgSize}%`}
+      loading="lazy"
       onClick={() => setAlbum(cover)}
       src={cover.startsWith("_") ? `https://placehold.co/300?text=${title}` : `covers/${cover}.jpg`}
       title={desc}

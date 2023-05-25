@@ -1,4 +1,4 @@
-import { AlbumInterface } from "./interfaces/AlbumInterface";
+import { AlbumInterface } from "../common/AlbumInterface";
 
 const firebaseAlbums: any[] = [];
 

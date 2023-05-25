@@ -1,6 +1,6 @@
 import { DocumentData, DocumentReference } from "firebase/firestore";
 
-import { AlbumInterface } from "../common/interfaces/AlbumInterface";
+import { AlbumInterface } from "../common/AlbumInterface";
 
 export interface FirebaseAlbumInterface extends AlbumInterface {
   id: string;

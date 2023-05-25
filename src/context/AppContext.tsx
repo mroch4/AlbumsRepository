@@ -1,8 +1,8 @@
 import { FC, createContext, useEffect, useState } from "react";
 
-import { AlbumInterface } from "../common/interfaces/AlbumInterface";
-import { ContextInterface } from "../common/interfaces/ContextInterface";
-import { ContextProviderInterface } from "../common/interfaces/ContextProviderInterface";
+import { AlbumInterface } from "../common/AlbumInterface";
+import { ContextInterface } from "./interfaces/ContextInterface";
+import { ContextProviderInterface } from "./interfaces/ContextProviderInterface";
 import { Sorting } from "../common/SortingEnum";
 import { ref } from "../firebase/Firebase";
 import { useCollectionDataOnce } from "react-firebase-hooks/firestore";
@@ -84,6 +84,7 @@ export const AppContextProvider: FC<ContextProviderInterface> = ({ children }) =
 
   useEffect(() => {
     setAlbumsCount(albums.length);
+    window.scrollTo(0, 0);
   }, [albums]);
 
   return (

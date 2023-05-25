@@ -8,7 +8,7 @@ export const TagComponent: FC<TagComponentInterface> = (props): JSX.Element => {
   const { setQuery } = useAppContext();
 
   return (
-    <span key={tag} className="badge bg-light text-dark me-2  pointer" onClick={() => setQuery(tag)}>
+    <span key={tag} className="badge bg-light text-dark mx-1 pointer" onClick={() => setQuery(tag)}>
       {tag}
     </span>
   );

@@ -42,13 +42,13 @@ export const AlbumCardComponent: FC<AlbumComponentInterface> = (props): JSX.Elem
           />
         </section>
         <section>
-          <h4 className="text-center">{title}</h4>
+          <h3 className="text-center">{title}</h3>
           <h5 className="text-center pointer" onClick={() => setQuery(artist.toLowerCase())}>
             {artist}
           </h5>
-          <h5 className="text-center pointer" onClick={() => setQuery(year.toString())}>
+          <h6 className="text-center pointer" onClick={() => setQuery(year.toString())}>
             {year}
-          </h5>
+          </h6>
         </section>
         <section className="d-flex justify-content-center my-3">
           {tags
