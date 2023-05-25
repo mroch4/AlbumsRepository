@@ -5,7 +5,7 @@ import React from "react";
 import { useAppContext } from "../hooks/useAppContext";
 
 export const ListComponent = (): JSX.Element => {
-  const { albumsList, loading, modalAlbum } = useAppContext();
+  const { album, albums, loading } = useAppContext();
 
   return (
     <React.Fragment>
@@ -13,12 +13,12 @@ export const ListComponent = (): JSX.Element => {
         <LoaderComponent />
       ) : (
         <React.Fragment>
-          <section className="d-flex flex-wrap align-content-start albums-list mx-1">
-            {albumsList.map((item) => (
+          <section className="d-flex flex-wrap align-content-start albums-list mx-3">
+            {albums.map((item) => (
               <AlbumCoverComponent data={item} key={item.cover} />
             ))}
           </section>
-          <section>{modalAlbum === undefined ? null : <AlbumCardComponent data={modalAlbum} />}</section>
+          <section>{album === undefined ? null : <AlbumCardComponent data={album} />}</section>
         </React.Fragment>
       )}
     </React.Fragment>

@@ -1,7 +1,7 @@
 {
   "name": "albumsrepository",
   "version": "0.1.0",
-  "homepage": "https://mroch4.github.io/",
+  "homepage": "https://mroch4.github.io",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",

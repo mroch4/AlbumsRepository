@@ -13,7 +13,7 @@ import { useAppContext } from "../hooks/useAppContext";
 export const AlbumCardComponent: FC<AlbumComponentInterface> = (props): JSX.Element => {
   const { artist, clicked, cover, id, spotifyUrl, tags, title, year, youtubeUrl } = props.data;
 
-  const { modalAlbum, setQuery, setModalAlbum } = useAppContext();
+  const { album, setQuery, setAlbum } = useAppContext();
 
   const desc = `${artist} - ${title} (${year})`;
   const iconSize: number = 20;
@@ -28,7 +28,7 @@ export const AlbumCardComponent: FC<AlbumComponentInterface> = (props): JSX.Elem
   };
 
   return (
-    <Modal show={modalAlbum !== undefined} onHide={() => setModalAlbum(undefined)}>
+    <Modal show={album !== undefined} onHide={() => setAlbum(undefined)}>
       <Modal.Header closeButton />
       <Modal.Body>
         <section className="d-flex justify-content-center mb-3">

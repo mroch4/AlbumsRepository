@@ -48,12 +48,6 @@ body {
   padding: 0.5rem;
 }
 
-.tag {
-  padding: 0.1rem 0.5rem;
-  border-radius: 0.25rem;
-  background-color: rgba(0, 0, 0, 0.05);
-}
-
 .top-nav {
   align-items: center;
   display: flex;

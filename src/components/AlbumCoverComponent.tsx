@@ -30,7 +30,9 @@ const getRowSize = (width: number) => {
 
 export const AlbumCoverComponent: FC<AlbumComponentInterface> = (props): JSX.Element => {
   const { artist, cover, title, year } = props.data;
-  const { setModalAlbum } = useAppContext();
+
+  const { setAlbum } = useAppContext();
+
   const { width } = useWindowDimensions();
   const [imgSize, setImgSize] = useState<number>();
 
@@ -46,7 +48,7 @@ export const AlbumCoverComponent: FC<AlbumComponentInterface> = (props): JSX.Ele
       alt={desc}
       className="album-cover pointer"
       height={`${imgSize}%`}
-      onClick={() => setModalAlbum(cover)}
+      onClick={() => setAlbum(cover)}
       src={cover.startsWith("_") ? `https://placehold.co/300?text=${title}` : `covers/${cover}.jpg`}
       title={desc}
       width={`${imgSize}%`}

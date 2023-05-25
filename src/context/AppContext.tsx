@@ -5,15 +5,16 @@ import { ContextInterface } from "../common/interfaces/ContextInterface";
 import { ContextProviderInterface } from "../common/interfaces/ContextProviderInterface";
 import { Sorting } from "../common/SortingEnum";
 import { ref } from "../firebase/Firebase";
-import { useCollectionData } from "react-firebase-hooks/firestore";
+import { useCollectionDataOnce } from "react-firebase-hooks/firestore";
 
 export const AppContext = createContext<ContextInterface>({
-  albumsList: [],
+  albums: [],
+  albumsCount: 0,
   loading: true,
-  modalAlbum: undefined,
+  album: undefined,
   query: "",
   sorting: Sorting.ByArtistAscending,
-  setModalAlbum: (): void => {
+  setAlbum: (): void => {
     throw new Error("Function not implemented.");
   },
   setQuery: (): void => {
@@ -25,10 +26,11 @@ export const AppContext = createContext<ContextInterface>({
 });
 
 export const AppContextProvider: FC<ContextProviderInterface> = ({ children }) => {
-  const [data, loading] = useCollectionData(ref);
+  const [data, loading] = useCollectionDataOnce(ref);
 
+  const [album, setAlbum] = useState<AlbumInterface | undefined>(undefined);
   const [albums, setAlbums] = useState<AlbumInterface[]>([]);
-  const [modalAlbum, setModalAlbum] = useState<AlbumInterface | undefined>(undefined);
+  const [albumsCount, setAlbumsCount] = useState<number>(0);
 
   const [query, setQuery] = useState<string>("");
   const [sorting, setSorting] = useState<Sorting>(Sorting.ByArtistAscending);
@@ -77,20 +79,25 @@ export const AppContextProvider: FC<ContextProviderInterface> = ({ children }) =
           })
       );
     }
-    setModalAlbum(undefined);
+    setAlbum(undefined);
   }, [data, query, sorting]);
+
+  useEffect(() => {
+    setAlbumsCount(albums.length);
+  }, [albums]);
 
   return (
     <AppContext.Provider
       value={{
-        albumsList: albums,
+        album: album,
+        albums: albums,
+        albumsCount: albumsCount,
         loading: loading,
-        modalAlbum: modalAlbum,
         query: query,
         sorting: sorting,
-        setModalAlbum: (cover: string | undefined) => {
+        setAlbum: (cover: string | undefined) => {
           const album = albums.find((album) => album.cover === cover);
-          setModalAlbum(album);
+          setAlbum(album);
         },
         setQuery: setQuery,
         setSorting: setSorting,
