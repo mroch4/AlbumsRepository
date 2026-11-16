@@ -1,4 +1,4 @@
-import { FC, createContext, useEffect, useState } from "react";
+import { FC, createContext, useEffect, useMemo, useState } from "react";
 
 import { AlbumInterface } from "../common/AlbumInterface";
 import { ContextInterface } from "./interfaces/ContextInterface";
@@ -10,14 +10,19 @@ import { useCollectionDataOnce } from "react-firebase-hooks/firestore";
 export const AppContext = createContext<ContextInterface>({
   albums: [],
   albumsCount: 0,
+  tagCounts: [],
   loading: true,
   album: undefined,
   query: "",
+  selectedTags: [],
   sorting: Sorting.ByArtistAscending,
   setAlbum: (): void => {
     throw new Error("Function not implemented.");
   },
   setQuery: (): void => {
+    throw new Error("Function not implemented.");
+  },
+  setSelectedTags: (): void => {
     throw new Error("Function not implemented.");
   },
   setSorting: (): void => {
@@ -33,7 +38,21 @@ export const AppContextProvider: FC<ContextProviderInterface> = ({ children }) =
   const [albumsCount, setAlbumsCount] = useState<number>(0);
 
   const [query, setQuery] = useState<string>("");
+  const [selectedTags, setSelectedTags] = useState<string[]>([]);
   const [sorting, setSorting] = useState<Sorting>(Sorting.ByArtistAscending);
+
+  const tagCounts = useMemo(() => {
+    const counts = new Map<string, number>();
+    data?.forEach((album: AlbumInterface) => {
+      new Set(album.tags).forEach((tag) => {
+        counts.set(tag, (counts.get(tag) ?? 0) + 1);
+      });
+    });
+
+    return Array.from(counts, ([tag, count]) => ({ tag, count })).sort((a, b) =>
+      a.tag.localeCompare(b.tag)
+    );
+  }, [data]);
 
   useEffect(() => {
     if (data !== undefined) {
@@ -45,7 +64,7 @@ export const AppContextProvider: FC<ContextProviderInterface> = ({ children }) =
               album.title.toLowerCase().includes(query) ||
               album.year.toString().includes(query) ||
               album.tags.includes(query)
-            );
+            ) && selectedTags.every((tag) => album.tags.includes(tag));
           })
           .sort((a: AlbumInterface, b: AlbumInterface) => {
             switch (sorting) {
@@ -74,7 +93,7 @@ export const AppContextProvider: FC<ContextProviderInterface> = ({ children }) =
       );
     }
     setAlbum(undefined);
-  }, [data, query, sorting]);
+  }, [data, query, selectedTags, sorting]);
 
   useEffect(() => {
     setAlbumsCount(albums.length);
@@ -87,14 +106,17 @@ export const AppContextProvider: FC<ContextProviderInterface> = ({ children }) =
         album: album,
         albums: albums,
         albumsCount: albumsCount,
+        tagCounts: tagCounts,
         loading: loading,
         query: query,
+        selectedTags: selectedTags,
         sorting: sorting,
         setAlbum: (spotifyUrl: string | undefined) => {
           const album = albums.find((album) => album.spotifyUrl === spotifyUrl);
           setAlbum(album);
         },
         setQuery: setQuery,
+        setSelectedTags: setSelectedTags,
         setSorting: setSorting,
       }}
     >
