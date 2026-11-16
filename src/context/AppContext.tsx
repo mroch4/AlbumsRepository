@@ -57,12 +57,6 @@ export const AppContextProvider: FC<ContextProviderInterface> = ({ children }) =
                 if (a.artist > b.artist) return -1;
                 if (a.artist < b.artist) return 1;
                 return b.year - a.year;
-              case Sorting.ByClickedAscending:
-                if (a.clicked === b.clicked) return Math.random() - 0.5;
-                return a.clicked - b.clicked;
-              case Sorting.ByClickedDescending:
-                if (a.clicked === b.clicked) return Math.random() - 0.5;
-                return b.clicked - a.clicked;
               case Sorting.ByTitleAscending:
                 return a.title.localeCompare(b.title);
               case Sorting.ByTitleDescending:
@@ -96,8 +90,8 @@ export const AppContextProvider: FC<ContextProviderInterface> = ({ children }) =
         loading: loading,
         query: query,
         sorting: sorting,
-        setAlbum: (cover: string | undefined) => {
-          const album = albums.find((album) => album.cover === cover);
+        setAlbum: (spotifyUrl: string | undefined) => {
+          const album = albums.find((album) => album.spotifyUrl === spotifyUrl);
           setAlbum(album);
         },
         setQuery: setQuery,

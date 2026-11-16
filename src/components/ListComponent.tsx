@@ -15,7 +15,7 @@ export const ListComponent = (): JSX.Element => {
         <React.Fragment>
           <section className="d-flex flex-wrap align-content-start albums-list mx-2">
             {albums.map((item) => (
-              <AlbumCoverComponent data={item} key={item.cover} />
+              <AlbumCoverComponent data={item} key={item.spotifyUrl} />
             ))}
           </section>
           <section>{album === undefined ? null : <AlbumCardComponent data={album} />}</section>
