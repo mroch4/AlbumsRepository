@@ -5,10 +5,17 @@ import { useAppContext } from "../hooks/useAppContext";
 export const TagComponent: FC<TagComponentInterface> = (props): JSX.Element => {
   const { tag } = props;
 
-  const { setQuery } = useAppContext();
+  const { selectedTags, setQuery, setSelectedTags } = useAppContext();
 
   return (
-    <span key={tag} className="badge bg-light text-dark mx-1 pointer" onClick={() => setQuery(tag)}>
+    <span
+      key={tag}
+      className="badge bg-light text-dark mx-1 pointer"
+      onClick={() => {
+        if (selectedTags.length > 0) setSelectedTags([]);
+        setQuery(tag);
+      }}
+    >
       {tag}
     </span>
   );

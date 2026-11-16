@@ -3,7 +3,7 @@ import { useAppContext } from "../hooks/useAppContext";
 import { useRef } from "react";
 
 export const SearchComponent = (): JSX.Element => {
-  const { query, setQuery, setSorting } = useAppContext();
+  const { query, selectedTags, setQuery, setSelectedTags, setSorting } = useAppContext();
 
   const inputRef = useRef<HTMLInputElement>(null);
 
@@ -16,7 +16,10 @@ export const SearchComponent = (): JSX.Element => {
       <input
         autoFocus
         className="form-control form-control-sm my-1"
-        onInput={(e) => setQuery(e.currentTarget.value.toLowerCase())}
+        onInput={(e) => {
+          if (selectedTags.length > 0) setSelectedTags([]);
+          setQuery(e.currentTarget.value.toLowerCase());
+        }}
         placeholder="Search..."
         ref={inputRef}
         type="text"

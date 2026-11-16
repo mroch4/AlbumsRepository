@@ -1,13 +1,19 @@
 import { AlbumCardComponent } from "./AlbumCardComponent";
 import { AlbumCoverComponent } from "./AlbumCoverComponent";
 import { LoaderComponent } from "./LoaderComponent";
-import { AlbumInterface } from "../common/AlbumInterface";
 import React from "react";
 import { useAppContext } from "../hooks/useAppContext";
 
 export const ListComponent = (): JSX.Element => {
-  const { album, albums, loading, selectedTags, setSelectedTags, tagCounts } = useAppContext();
-  const fallbackKeys = React.useRef(new WeakMap<AlbumInterface, string>());
+  const {
+    album,
+    albums,
+    loading,
+    selectedTags,
+    setQuery,
+    setSelectedTags,
+    tagCounts,
+  } = useAppContext();
 
   return (
     <React.Fragment>
@@ -25,13 +31,14 @@ export const ListComponent = (): JSX.Element => {
                       selectedTags.includes(tag) ? "bg-secondary text-light" : "bg-light text-dark"
                     }`}
                     key={tag}
-                    onClick={() =>
+                    onClick={() => {
+                      setQuery("");
                       setSelectedTags(
                         selectedTags.includes(tag)
                           ? selectedTags.filter((selectedTag) => selectedTag !== tag)
                           : [...selectedTags, tag]
-                      )
-                    }
+                      );
+                    }}
                     type="button"
                   >
                     {tag}: {count}
@@ -39,15 +46,9 @@ export const ListComponent = (): JSX.Element => {
                 ))}
               </div>
             </div>
-            {albums.map((item) => {
-              let key = item.spotifyUrl;
-              if (!key) {
-                key = fallbackKeys.current.get(item) ?? Math.random().toString(36).slice(2);
-                fallbackKeys.current.set(item, key);
-              }
-
-              return <AlbumCoverComponent data={item} key={key} />;
-            })}
+            {albums.map((item) => (
+              <AlbumCoverComponent data={item} key={item.id} />
+            ))}
           </section>
           <section>{album === undefined ? null : <AlbumCardComponent data={album} />}</section>
         </React.Fragment>
