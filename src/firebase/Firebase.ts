@@ -8,4 +8,4 @@ const app = initializeApp(firebaseConfig);
 
 export const firestoreDatabase = getFirestore(app);
 
-export const ref = collection(firestoreDatabase, "albums").withConverter(AlbumConverter);
+export const ref = collection(firestoreDatabase, "albums_v2").withConverter(AlbumConverter);

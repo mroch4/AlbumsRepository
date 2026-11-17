@@ -24,6 +24,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "import:albums-v2": "node scripts/import-albums-v2.cjs",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
@@ -48,6 +49,7 @@
   },
   "devDependencies": {
     "@types/node": "^26.6.6",
+    "firebase-admin": "^14.5.1",
     "gh-pages": "^5.0.0"
   }
 }
