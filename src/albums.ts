@@ -1,4 +1,4 @@
-﻿import { AlbumInterface } from "./common/AlbumInterface";
+import { AlbumInterface } from "./common/AlbumInterface";
 
 export const albums: AlbumInterface[] = [
     {
