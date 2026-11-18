@@ -1,3 +1,5 @@
+import { Tag } from "../../common/TagEnum";
+
 export interface TagComponentInterface {
-  tag: string;
+  tag: Tag;
 }

@@ -4,6 +4,7 @@ import { AlbumInterface } from "../common/AlbumInterface";
 import { ContextInterface } from "./interfaces/ContextInterface";
 import { ContextProviderInterface } from "./interfaces/ContextProviderInterface";
 import { Sorting } from "../common/SortingEnum";
+import { Tag } from "../common/TagEnum";
 import { albums as albumData } from "../albums";
 
 export const AppContext = createContext<ContextInterface>({
@@ -32,11 +33,11 @@ export const AppContextProvider: FC<ContextProviderInterface> = ({ children }) =
   const [album, setAlbum] = useState<AlbumInterface | undefined>(undefined);
 
   const [query, setQuery] = useState<string>("");
-  const [selectedTags, setSelectedTags] = useState<string[]>([]);
+  const [selectedTags, setSelectedTags] = useState<Tag[]>([]);
   const [sorting, setSorting] = useState<Sorting>(Sorting.ByArtistAscending);
 
   const tagCounts = useMemo(() => {
-    const counts = new Map<string, number>();
+    const counts = new Map<Tag, number>();
     albumData.forEach((album: AlbumInterface) => {
       new Set(album.tags).forEach((tag) => {
         counts.set(tag, (counts.get(tag) ?? 0) + 1);
@@ -56,7 +57,7 @@ export const AppContextProvider: FC<ContextProviderInterface> = ({ children }) =
             album.artist.toLowerCase().includes(query) ||
             album.title.toLowerCase().includes(query) ||
             album.year.toString().includes(query) ||
-            album.tags.includes(query)
+            album.tags.some((tag) => tag.includes(query))
           ) && selectedTags.every((tag) => album.tags.includes(tag));
         })
         .sort((a: AlbumInterface, b: AlbumInterface) => {

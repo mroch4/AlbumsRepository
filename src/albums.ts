@@ -1,5 +1,5 @@
 import { AlbumInterface } from "./common/AlbumInterface";
-
+import { Tag } from "./common/TagEnum";
 export const albums: AlbumInterface[] = [
     {
         artist: "Audioslave",
@@ -7,11 +7,10 @@ export const albums: AlbumInterface[] = [
         year: 2006,
         spotifyUrl: "76fYJtMmnPTOpipCoH1Mgo",
         tags: [
-            "cd",
-            "prezent",
-            "I",
-            "16-bit/44,1 kHz",
-            "o:cdrip"
+            Tag.Cd,
+            Tag.Prezent,
+            Tag.I,
+            Tag.OriginCdrip
         ],
     },
     {
@@ -20,9 +19,8 @@ export const albums: AlbumInterface[] = [
         year: 2014,
         spotifyUrl: "25xQevIYTCKcvsw9fyZoDb",
         tags: [
-            "spotify",
-            "16-bit/44,1 kHz",
-            "o:soulseek"
+            Tag.Spotify,
+            Tag.OriginSoulseek
         ],
     },
     {
@@ -31,10 +29,9 @@ export const albums: AlbumInterface[] = [
         year: 2006,
         spotifyUrl: "3FKvu05whTUtsoMwnXEQ10",
         tags: [
-            "II",
-            "auto",
-            "16-bit/44,1 kHz",
-            "o:soulseek"
+            Tag.II,
+            Tag.Auto,
+            Tag.OriginSoulseek
         ],
     },
     {
@@ -43,9 +40,8 @@ export const albums: AlbumInterface[] = [
         year: 1993,
         spotifyUrl: "_alexandria",
         tags: [
-            "discman",
-            "16-bit/44,1 kHz",
-            "o:cdrip"
+            Tag.Discman,
+            Tag.OriginCdrip
         ],
     },
     {
@@ -54,9 +50,8 @@ export const albums: AlbumInterface[] = [
         year: 2014,
         spotifyUrl: "5eqhQF3HIVdgwfotwNPMFK",
         tags: [
-            "II",
-            "16-bit/44,1 kHz",
-            "o:soulseek"
+            Tag.II,
+            Tag.OriginSoulseek
         ],
     },
     {
@@ -65,9 +60,8 @@ export const albums: AlbumInterface[] = [
         year: 2006,
         spotifyUrl: "67sfyNkOtMZp01K22w03sl",
         tags: [
-            "II",
-            "16-bit/44,1 kHz",
-            "mp3"
+            Tag.II,
+            Tag.Mp3
         ],
     },
     {
@@ -76,9 +70,8 @@ export const albums: AlbumInterface[] = [
         year: 2012,
         spotifyUrl: "3hRE5kwKGasVPXvcIpx2xv",
         tags: [
-            "III",
-            "16-bit/44,1 kHz",
-            "o:soulseek"
+            Tag.III,
+            Tag.OriginSoulseek
         ],
     },
     {
@@ -87,9 +80,8 @@ export const albums: AlbumInterface[] = [
         year: 1996,
         spotifyUrl: "6yWMN087PgSimbcVmHLEwG",
         tags: [
-            "II",
-            "16-bit/44,1 kHz",
-            "o:soulseek"
+            Tag.II,
+            Tag.OriginSoulseek
         ],
     },
     {
@@ -98,9 +90,8 @@ export const albums: AlbumInterface[] = [
         year: 2014,
         spotifyUrl: "2mepXKJlgU28VBwkSXjWfY",
         tags: [
-            "spotify",
-            "16-bit/44,1 kHz",
-            "o:flacmusicfinder"
+            Tag.Spotify,
+            Tag.OriginFlacMusicFinder
         ],
     },
     {
@@ -109,11 +100,11 @@ export const albums: AlbumInterface[] = [
         year: 2001,
         spotifyUrl: "7ikuEzL6xeAgu6yT6YVLy7",
         tags: [
-            "discman",
-            "I",
-            "auto",
-            "24-bit/48 kHz",
-            "o:soulseek"
+            Tag.Discman,
+            Tag.I,
+            Tag.Auto,
+            Tag.TwentyFourBit48Khz,
+            Tag.OriginSoulseek
         ],
     },
     {
@@ -122,9 +113,8 @@ export const albums: AlbumInterface[] = [
         year: 2018,
         spotifyUrl: "6rBnEJJUih41OU4AemGs4y",
         tags: [
-            "spotify",
-            "16-bit/44,1 kHz",
-            "o:soulseek"
+            Tag.Spotify,
+            Tag.OriginSoulseek
         ],
     },
     {
@@ -133,10 +123,9 @@ export const albums: AlbumInterface[] = [
         year: 1993,
         spotifyUrl: "4PCVbeHbMHCyZS7Oxl4L31",
         tags: [
-            "cd",
-            "media markt",
-            "16-bit/44,1 kHz",
-            "o:cdrip"
+            Tag.Cd,
+            Tag.MediaMarkt,
+            Tag.OriginCdrip
         ],
     },
     {
@@ -145,9 +134,8 @@ export const albums: AlbumInterface[] = [
         year: 1975,
         spotifyUrl: "6uvBKDGlJAYLH5Vy6RQVsc",
         tags: [
-            "discman",
-            "16-bit/44,1 kHz",
-            "no flac"
+            Tag.Discman,
+            Tag.NoFlac
         ],
     },
     {
@@ -156,9 +144,8 @@ export const albums: AlbumInterface[] = [
         year: 1994,
         spotifyUrl: "2vi1ddPi3fY7vePMqxUVob",
         tags: [
-            "II",
-            "16-bit/44,1 kHz",
-            "o:rapidgator"
+            Tag.II,
+            Tag.OriginRapidgator
         ],
     },
     {
@@ -167,9 +154,8 @@ export const albums: AlbumInterface[] = [
         year: 2004,
         spotifyUrl: "2W4FYloQ0s0Fb8lKawb0iC",
         tags: [
-            "II",
-            "16-bit/44,1 kHz",
-            "o:soulseek"
+            Tag.II,
+            Tag.OriginSoulseek
         ],
     },
     {
@@ -178,9 +164,8 @@ export const albums: AlbumInterface[] = [
         year: 1992,
         spotifyUrl: "59GwovfBk0Kp2HJw1G7E5Q",
         tags: [
-            "cd",
-            "16-bit/44,1 kHz",
-            "o:cdrip"
+            Tag.Cd,
+            Tag.OriginCdrip
         ],
     },
     {
@@ -189,9 +174,8 @@ export const albums: AlbumInterface[] = [
         year: 2012,
         spotifyUrl: "0Rm1Q7jINtrkDbfXfqnlYg",
         tags: [
-            "II",
-            "16-bit/44,1 kHz",
-            "o:soulseek"
+            Tag.II,
+            Tag.OriginSoulseek
         ],
     },
     {
@@ -200,9 +184,8 @@ export const albums: AlbumInterface[] = [
         year: 2017,
         spotifyUrl: "3Rz6kF8eGqrDOEteo5YsBj",
         tags: [
-            "spotify",
-            "16-bit/44,1 kHz",
-            "o:flacmusicfinder"
+            Tag.Spotify,
+            Tag.OriginFlacMusicFinder
         ],
     },
     {
@@ -211,11 +194,10 @@ export const albums: AlbumInterface[] = [
         year: 2015,
         spotifyUrl: "4XC0gFgH9EqXlh6IcdXOZw",
         tags: [
-            "cd",
-            "olx:in",
-            "auto",
-            "16-bit/44,1 kHz",
-            "o:cdrip"
+            Tag.Cd,
+            Tag.OlxIn,
+            Tag.Auto,
+            Tag.OriginCdrip
         ],
     },
     {
@@ -224,9 +206,8 @@ export const albums: AlbumInterface[] = [
         year: 2017,
         spotifyUrl: "4FYvuWhNshZBsOT0fptzR3",
         tags: [
-            "spotify",
-            "16-bit/44,1 kHz",
-            "o:flacmusicfinder"
+            Tag.Spotify,
+            Tag.OriginFlacMusicFinder
         ],
     },
     {
@@ -235,9 +216,8 @@ export const albums: AlbumInterface[] = [
         year: 2003,
         spotifyUrl: "7ngolhYq4Cn2ufiv6pCrzD",
         tags: [
-            "olx:out",
-            "16-bit/44,1 kHz",
-            "o:cdrip"
+            Tag.OlxOut,
+            Tag.OriginCdrip
         ],
     },
     {
@@ -246,9 +226,8 @@ export const albums: AlbumInterface[] = [
         year: 2018,
         spotifyUrl: "3CHKkXkiVHGzTVvOyX4aU2",
         tags: [
-            "spotify",
-            "16-bit/44,1 kHz",
-            "o:rapidgator"
+            Tag.Spotify,
+            Tag.OriginRapidgator
         ],
     },
     {
@@ -257,10 +236,9 @@ export const albums: AlbumInterface[] = [
         year: 2016,
         spotifyUrl: "43otFXrY0bgaq5fB3GrZj6",
         tags: [
-            "III",
-            "auto",
-            "16-bit/44,1 kHz",
-            "o:soulseek"
+            Tag.III,
+            Tag.Auto,
+            Tag.OriginSoulseek
         ],
     },
     {
@@ -269,10 +247,9 @@ export const albums: AlbumInterface[] = [
         year: 2004,
         spotifyUrl: "4bCbQx08L6clCZKWu0Jmiq",
         tags: [
-            "III",
-            "auto",
-            "16-bit/44,1 kHz",
-            "o:soulseek"
+            Tag.III,
+            Tag.Auto,
+            Tag.OriginSoulseek
         ],
     },
     {
@@ -281,10 +258,9 @@ export const albums: AlbumInterface[] = [
         year: 1995,
         spotifyUrl: "2doePSnN8F3dTh7CTsjGfR",
         tags: [
-            "discman",
-            "cd",
-            "16-bit/44,1 kHz",
-            "o:cdrip"
+            Tag.Discman,
+            Tag.Cd,
+            Tag.OriginCdrip
         ],
     },
     {
@@ -293,9 +269,8 @@ export const albums: AlbumInterface[] = [
         year: 1994,
         spotifyUrl: "5PwszPyt6lftGQHIB9VwZ8",
         tags: [
-            "cd",
-            "16-bit/44,1 kHz",
-            "o:cdrip"
+            Tag.Cd,
+            Tag.OriginCdrip
         ],
     },
     {
@@ -304,12 +279,11 @@ export const albums: AlbumInterface[] = [
         year: 2006,
         spotifyUrl: "7xl50xr9NDkd3i2kBbzsNZ",
         tags: [
-            "cd",
-            "I",
-            "pirat",
-            "discman",
-            "16-bit/44,1 kHz",
-            "o:soulseek"
+            Tag.Cd,
+            Tag.I,
+            Tag.Pirat,
+            Tag.Discman,
+            Tag.OriginSoulseek
         ],
     },
     {
@@ -318,22 +292,20 @@ export const albums: AlbumInterface[] = [
         year: 2000,
         spotifyUrl: "_electric",
         tags: [
-            "discman",
-            "16-bit/44,1 kHz",
-            "o:cdrip"
+            Tag.Discman,
+            Tag.OriginCdrip
         ],
     },
     {
         artist: "Coma",
-        title: "Zaprzepaszczone Siły Wielkiej Armii Świętych Znaków",
+        title: "Zaprzepaszczone SiĹ‚y Wielkiej Armii ĹšwiÄ™tych ZnakĂłw",
         year: 2006,
         spotifyUrl: "4Y25amnFEzgbmBQQ98YqAm",
         tags: [
-            "biedronka",
-            "I",
-            "olx:out",
-            "16-bit/44,1 kHz",
-            "o:cdrip"
+            Tag.Biedronka,
+            Tag.I,
+            Tag.OlxOut,
+            Tag.OriginCdrip
         ],
     },
     {
@@ -342,10 +314,9 @@ export const albums: AlbumInterface[] = [
         year: 2014,
         spotifyUrl: "1764NzFhMGckdltRzPNiRj",
         tags: [
-            "cd",
-            "olx:in",
-            "16-bit/44,1 kHz",
-            "o:cdrip"
+            Tag.Cd,
+            Tag.OlxIn,
+            Tag.OriginCdrip
         ],
     },
     {
@@ -354,11 +325,10 @@ export const albums: AlbumInterface[] = [
         year: 2002,
         spotifyUrl: "78guAsers0klWl6RwzgDLd",
         tags: [
-            "cd",
-            "prezent",
-            "I",
-            "16-bit/44,1 kHz",
-            "o:cdrip"
+            Tag.Cd,
+            Tag.Prezent,
+            Tag.I,
+            Tag.OriginCdrip
         ],
     },
     {
@@ -367,10 +337,9 @@ export const albums: AlbumInterface[] = [
         year: 1990,
         spotifyUrl: "5LbHbwejgZXRZAgzVAjkhj",
         tags: [
-            "cd",
-            "media markt",
-            "16-bit/44,1 kHz",
-            "o:cdrip"
+            Tag.Cd,
+            Tag.MediaMarkt,
+            Tag.OriginCdrip
         ],
     },
     {
@@ -379,9 +348,8 @@ export const albums: AlbumInterface[] = [
         year: 1991,
         spotifyUrl: "6AA5g730FNzwKI08H7rxBk",
         tags: [
-            "olx:vinyl",
-            "16-bit/44,1 kHz",
-            "o:cdrip"
+            Tag.OlxVinyl,
+            Tag.OriginCdrip
         ],
     },
     {
@@ -390,10 +358,9 @@ export const albums: AlbumInterface[] = [
         year: 2017,
         spotifyUrl: "3hEWSTHddLUQvegmX0wOk4",
         tags: [
-            "III",
-            "auto",
-            "16-bit/44,1 kHz",
-            "o:soulseek"
+            Tag.III,
+            Tag.Auto,
+            Tag.OriginSoulseek
         ],
     },
     {
@@ -402,9 +369,8 @@ export const albums: AlbumInterface[] = [
         year: 2008,
         spotifyUrl: "6tgIXjV7flQReoAB2Hfe2z",
         tags: [
-            "II",
-            "16-bit/44,1 kHz",
-            "mp3"
+            Tag.II,
+            Tag.Mp3
         ],
     },
     {
@@ -413,9 +379,8 @@ export const albums: AlbumInterface[] = [
         year: 2021,
         spotifyUrl: "05aqnnpYVOvsX0SIzmIuxi",
         tags: [
-            "spotify",
-            "16-bit/44,1 kHz",
-            "o:rapidgator"
+            Tag.Spotify,
+            Tag.OriginRapidgator
         ],
     },
     {
@@ -424,12 +389,11 @@ export const albums: AlbumInterface[] = [
         year: 2002,
         spotifyUrl: "1jWKVgnHX8nwR551hQNx5K",
         tags: [
-            "discman",
-            "cd",
-            "I",
-            "pirat",
-            "16-bit/44,1 kHz",
-            "o:cdrip"
+            Tag.Discman,
+            Tag.Cd,
+            Tag.I,
+            Tag.Pirat,
+            Tag.OriginCdrip
         ],
     },
     {
@@ -438,10 +402,9 @@ export const albums: AlbumInterface[] = [
         year: 1993,
         spotifyUrl: "3Esn6LoXuWtLZNYq8FCzr0",
         tags: [
-            "II",
-            "olx:out",
-            "16-bit/44,1 kHz",
-            "o:cdrip"
+            Tag.II,
+            Tag.OlxOut,
+            Tag.OriginCdrip
         ],
     },
     {
@@ -450,10 +413,9 @@ export const albums: AlbumInterface[] = [
         year: 2008,
         spotifyUrl: "0suNLpB9xraAv1FcdlITjQ",
         tags: [
-            "cd",
-            "biedronka",
-            "16-bit/44,1 kHz",
-            "o:cdrip"
+            Tag.Cd,
+            Tag.Biedronka,
+            Tag.OriginCdrip
         ],
     },
     {
@@ -462,9 +424,8 @@ export const albums: AlbumInterface[] = [
         year: 2003,
         spotifyUrl: "4fygErqiNgFUic5hU42Z3E",
         tags: [
-            "spotify",
-            "16-bit/44,1 kHz",
-            "o:soulseek"
+            Tag.Spotify,
+            Tag.OriginSoulseek
         ],
     },
     {
@@ -473,10 +434,9 @@ export const albums: AlbumInterface[] = [
         year: 1999,
         spotifyUrl: "2eia0myWFgoHuttJytCxgX",
         tags: [
-            "cd",
-            "media markt",
-            "16-bit/44,1 kHz",
-            "o:cdrip"
+            Tag.Cd,
+            Tag.MediaMarkt,
+            Tag.OriginCdrip
         ],
     },
     {
@@ -485,9 +445,8 @@ export const albums: AlbumInterface[] = [
         year: 2008,
         spotifyUrl: "2XbZLK8epe8hNnh8fo1ArW",
         tags: [
-            "II",
-            "16-bit/44,1 kHz",
-            "o:soulseek"
+            Tag.II,
+            Tag.OriginSoulseek
         ],
     },
     {
@@ -496,20 +455,18 @@ export const albums: AlbumInterface[] = [
         year: 2022,
         spotifyUrl: "660c34OZzJ4gUd0rXe8ARp",
         tags: [
-            "spotify",
-            "16-bit/44,1 kHz",
-            "o:flacmusicfinder"
+            Tag.Spotify,
+            Tag.OriginFlacMusicFinder
         ],
     },
     {
-        artist: "Dawid Podsiadło",
+        artist: "Dawid PodsiadĹ‚o",
         title: "Annoyance And Disappointment",
         year: 2015,
         spotifyUrl: "2OHeBBlmX51KCY1UTqxDZ4",
         tags: [
-            "III",
-            "16-bit/44,1 kHz",
-            "o:soulseek"
+            Tag.III,
+            Tag.OriginSoulseek
         ],
     },
     {
@@ -518,10 +475,9 @@ export const albums: AlbumInterface[] = [
         year: 2007,
         spotifyUrl: "6MY4dyk9U9A5bkxEIk22jj",
         tags: [
-            "III",
-            "auto",
-            "16-bit/44,1 kHz",
-            "o:soulseek"
+            Tag.III,
+            Tag.Auto,
+            Tag.OriginSoulseek
         ],
     },
     {
@@ -530,9 +486,8 @@ export const albums: AlbumInterface[] = [
         year: 1995,
         spotifyUrl: "7iLuEbxvxepyHp4yfVfiut",
         tags: [
-            "discman",
-            "16-bit/44,1 kHz",
-            "o:soulseek"
+            Tag.Discman,
+            Tag.OriginSoulseek
         ],
     },
     {
@@ -541,10 +496,9 @@ export const albums: AlbumInterface[] = [
         year: 2000,
         spotifyUrl: "6iVOwFVjFRoQPgj8GUwSsi",
         tags: [
-            "cd",
-            "media markt",
-            "16-bit/44,1 kHz",
-            "o:cdrip"
+            Tag.Cd,
+            Tag.MediaMarkt,
+            Tag.OriginCdrip
         ],
     },
     {
@@ -553,10 +507,9 @@ export const albums: AlbumInterface[] = [
         year: 2012,
         spotifyUrl: "4RdFUAZucARCFnGjwmJRC0",
         tags: [
-            "III",
-            "16-bit/44,1 kHz",
-            "o:soulseek",
-                      "mp3"
+            Tag.III,
+            Tag.OriginSoulseek,
+            Tag.Mp3
         ],
     },
     {
@@ -565,11 +518,10 @@ export const albums: AlbumInterface[] = [
         year: 2005,
         spotifyUrl: "0HQhToIjonHnJRRPN4jeJU",
         tags: [
-            "cd",
-            "prezent",
-            "I",
-            "16-bit/44,1 kHz",
-            "o:cdrip"
+            Tag.Cd,
+            Tag.Prezent,
+            Tag.I,
+            Tag.OriginCdrip
         ],
     },
     {
@@ -578,10 +530,9 @@ export const albums: AlbumInterface[] = [
         year: 2011,
         spotifyUrl: "5wZtSIvijWCMc1vlPFqAyB",
         tags: [
-            "III",
-            "auto",
-            "16-bit/44,1 kHz",
-            "o:soulseek"
+            Tag.III,
+            Tag.Auto,
+            Tag.OriginSoulseek
         ],
     },
     {
@@ -590,10 +541,9 @@ export const albums: AlbumInterface[] = [
         year: 2005,
         spotifyUrl: "2wbXOTQaDS9Jnu2bjpHwEd",
         tags: [
-            "cd",
-            "biedronka",
-            "16-bit/44,1 kHz",
-            "o:cdrip"
+            Tag.Cd,
+            Tag.Biedronka,
+            Tag.OriginCdrip
         ],
     },
     {
@@ -602,9 +552,9 @@ export const albums: AlbumInterface[] = [
         year: 2013,
         spotifyUrl: "61XZkrTQMo602r1e5rgRka",
         tags: [
-            "III",
-            "16-bit/96 kHz",
-            "o:soulseek"
+            Tag.III,
+            Tag.TwentyFourBit96Khz,
+            Tag.OriginSoulseek
         ],
     },
     {
@@ -613,9 +563,8 @@ export const albums: AlbumInterface[] = [
         year: 2009,
         spotifyUrl: "63XTF7poLIFIP9YA8XVnET",
         tags: [
-            "olx:out",
-            "16-bit/44,1 kHz",
-            "o:cdrip"
+            Tag.OlxOut,
+            Tag.OriginCdrip
         ],
     },
     {
@@ -624,10 +573,9 @@ export const albums: AlbumInterface[] = [
         year: 2003,
         spotifyUrl: "6FikZepfzH2DsjVdeVcgu5",
         tags: [
-            "II",
-            "auto",
-            "16-bit/44,1 kHz",
-            "o:soulseek"
+            Tag.II,
+            Tag.Auto,
+            Tag.OriginSoulseek
         ],
     },
     {
@@ -636,9 +584,8 @@ export const albums: AlbumInterface[] = [
         year: 2011,
         spotifyUrl: "52SGVryzCN8m2dLWNVcH9l",
         tags: [
-            "II",
-            "16-bit/44,1 kHz",
-            "o:soulseek"
+            Tag.II,
+            Tag.OriginSoulseek
         ],
     },
     {
@@ -647,9 +594,8 @@ export const albums: AlbumInterface[] = [
         year: 2018,
         spotifyUrl: "4AAPRl8BKlsIVC5aeedlBv",
         tags: [
-            "spotify",
-            "16-bit/44,1 kHz",
-            "o:soulseek"
+            Tag.Spotify,
+            Tag.OriginSoulseek
         ],
     },
     {
@@ -658,21 +604,19 @@ export const albums: AlbumInterface[] = [
         year: 2002,
         spotifyUrl: "4FFDudC4xBVF6MYJUynRsN",
         tags: [
-            "I",
-            "16-bit/44,1 kHz",
-            "o:soulseek"
+            Tag.I,
+            Tag.OriginSoulseek
         ],
     },
     {
         artist: "Evergrey",
-        title: "A Heartless Portrait (The OrphĂ©an Testament)",
+        title: "A Heartless Portrait (The OrphÄ‚Â©an Testament)",
         year: 2022,
         spotifyUrl: "7ks1taIwddDv4bjFrujxn2",
         tags: [
-            "spotify",
-            "16-bit/44,1 kHz",
-            "o:soulseek",
-            "x"
+            Tag.Spotify,
+            Tag.OriginSoulseek,
+            Tag.X
         ],
     },
     {
@@ -681,9 +625,8 @@ export const albums: AlbumInterface[] = [
         year: 1988,
         spotifyUrl: "45uNWPJUtdxscj6QxOizZN",
         tags: [
-            "discman",
-            "16-bit/44,1 kHz",
-            "o:soulseek"
+            Tag.Discman,
+            Tag.OriginSoulseek
         ],
     },
     {
@@ -692,10 +635,9 @@ export const albums: AlbumInterface[] = [
         year: 1992,
         spotifyUrl: "7k1YOwYf369EX0aHeXApWp",
         tags: [
-            "II",
-            "cd",
-            "16-bit/44,1 kHz",
-            "o:cdrip"
+            Tag.II,
+            Tag.Cd,
+            Tag.OriginCdrip
         ],
     },
     {
@@ -704,11 +646,10 @@ export const albums: AlbumInterface[] = [
         year: 1989,
         spotifyUrl: "27WeSriNUz7qD50tdoZClP",
         tags: [
-            "olx",
-            "II",
-            "olx:vinyl",
-            "16-bit/44,1 kHz",
-            "o:cdrip"
+            Tag.Olx,
+            Tag.II,
+            Tag.OlxVinyl,
+            Tag.OriginCdrip
         ],
     },
     {
@@ -717,9 +658,8 @@ export const albums: AlbumInterface[] = [
         year: 1999,
         spotifyUrl: "_porter band 99",
         tags: [
-            "discman",
-            "16-bit/44,1 kHz",
-            "o:cdrip"
+            Tag.Discman,
+            Tag.OriginCdrip
         ],
     },
     {
@@ -728,9 +668,8 @@ export const albums: AlbumInterface[] = [
         year: 2012,
         spotifyUrl: "4P9SBtY51x7tHB0q4YbAQT",
         tags: [
-            "II",
-            "16-bit/44,1 kHz",
-            "o:rapidgator"
+            Tag.II,
+            Tag.OriginRapidgator
         ],
     },
     {
@@ -739,9 +678,8 @@ export const albums: AlbumInterface[] = [
         year: 2016,
         spotifyUrl: "5KRTSW8M5GxnznK3fr781W",
         tags: [
-            "spotify",
-            "16-bit/44,1 kHz",
-            "o:soulseek"
+            Tag.Spotify,
+            Tag.OriginSoulseek
         ],
     },
     {
@@ -750,9 +688,8 @@ export const albums: AlbumInterface[] = [
         year: 2010,
         spotifyUrl: "1kFN0IOnTnmfawj7xrOzKe",
         tags: [
-            "III",
-            "16-bit/44,1 kHz",
-            "o:soulseek"
+            Tag.III,
+            Tag.OriginSoulseek
         ],
     },
     {
@@ -761,10 +698,9 @@ export const albums: AlbumInterface[] = [
         year: 2011,
         spotifyUrl: "4h3UUonQ3Rpo62t7OmEcsd",
         tags: [
-            "spotify",
-            "auto",
-            "16-bit/44,1 kHz",
-            "o:flacmusicfinder"
+            Tag.Spotify,
+            Tag.Auto,
+            Tag.OriginFlacMusicFinder
         ],
     },
     {
@@ -773,10 +709,9 @@ export const albums: AlbumInterface[] = [
         year: 2001,
         spotifyUrl: "3mSUlhyG7X3ZCekkIi0TiI",
         tags: [
-            "spotify",
-            "auto",
-            "16-bit/44,1 kHz",
-            "o:flacmusicfinder"
+            Tag.Spotify,
+            Tag.Auto,
+            Tag.OriginFlacMusicFinder
         ],
     },
     {
@@ -785,22 +720,20 @@ export const albums: AlbumInterface[] = [
         year: 1995,
         spotifyUrl: "_illusion 3",
         tags: [
-            "III",
-            "16-bit/44,1 kHz",
-            "mp3"
+            Tag.III,
+            Tag.Mp3
         ],
     },
     {
         artist: "Mama Selita",
-        title: "Materialiści",
+        title: "MaterialiĹ›ci",
         year: 2014,
         spotifyUrl: "3erR3n70KrH8UX6R3kHzro",
         tags: [
-            "spotify",
-            "cd",
-            "olx:in",
-            "16-bit/44,1 kHz",
-            "o:cdrip"
+            Tag.Spotify,
+            Tag.Cd,
+            Tag.OlxIn,
+            Tag.OriginCdrip
         ],
     },
     {
@@ -809,10 +742,9 @@ export const albums: AlbumInterface[] = [
         year: 1992,
         spotifyUrl: "58NXIEYqmq5dQHg9nV9duM",
         tags: [
-            "cd",
-            "media markt",
-            "16-bit/44,1 kHz",
-            "o:cdrip"
+            Tag.Cd,
+            Tag.MediaMarkt,
+            Tag.OriginCdrip
         ],
     },
     {
@@ -821,20 +753,18 @@ export const albums: AlbumInterface[] = [
         year: 2017,
         spotifyUrl: "2QEGCBGVqN0WvX2wHeuwMP",
         tags: [
-            "spotify",
-            "16-bit/44,1 kHz",
-            "o:soulseek"
+            Tag.Spotify,
+            Tag.OriginSoulseek
         ],
     },
     {
         artist: "Illusion",
-        title: "Opowieści",
+        title: "OpowieĹ›ci",
         year: 2014,
         spotifyUrl: "7KAoDONaqvs7by4oI1vySY",
         tags: [
-            "III",
-            "16-bit/44,1 kHz",
-            "mp3"
+            Tag.III,
+            Tag.Mp3
         ],
     },
     {
@@ -843,9 +773,8 @@ export const albums: AlbumInterface[] = [
         year: 2009,
         spotifyUrl: "6aA7B8RGZOCmQDpKhWPJ3U",
         tags: [
-            "III",
-            "16-bit/44,1 kHz",
-            "o:flacmusicfinder"
+            Tag.III,
+            Tag.OriginFlacMusicFinder
         ],
     },
     {
@@ -854,21 +783,21 @@ export const albums: AlbumInterface[] = [
         year: 2018,
         spotifyUrl: "0R3iUk31drnPKGCdb35Cbw",
         tags: [
-            "cd",
-            "olx:in",
-            "16-bit/44,1 kHz",
-            "o:cdrip"
+            Tag.Cd,
+            Tag.OlxIn,
+            Tag.OriginCdrip
         ],
     },
     {
         artist: "Pink Floyd",
         title: "Animals",
-        year: 1977,
+        year: 2018,
         spotifyUrl: "0Unhg884FzoZhVWyrMvtAG",
+        coverExtension: "JPG",
         tags: [
-            "discman",
-            "24-bit/192 kHz",
-            "o:soulseek"
+            Tag.Discman,
+            Tag.TwentyFourBit192Khz,
+            Tag.OriginSoulseek
         ],
     },
     {
@@ -877,9 +806,8 @@ export const albums: AlbumInterface[] = [
         year: 2009,
         spotifyUrl: "2vkLky2qG0rziUk0eOsIZ9",
         tags: [
-            "II",
-            "16-bit/44,1 kHz",
-            "o:soulseek"
+            Tag.II,
+            Tag.OriginSoulseek
         ],
     },
     {
@@ -888,10 +816,9 @@ export const albums: AlbumInterface[] = [
         year: 1999,
         spotifyUrl: "0fLhefnjlIV3pGNF9Wo8CD",
         tags: [
-            "I",
-            "auto",
-            "16-bit/44,1 kHz",
-            "o:soulseek"
+            Tag.I,
+            Tag.Auto,
+            Tag.OriginSoulseek
         ],
     },
     {
@@ -900,9 +827,8 @@ export const albums: AlbumInterface[] = [
         year: 2022,
         spotifyUrl: "6c5mEBiGZdHm0lnzvlbXVW",
         tags: [
-            "spotify",
-            "16-bit/44,1 kHz",
-            "o:soulseek"
+            Tag.Spotify,
+            Tag.OriginSoulseek
         ],
     },
     {
@@ -911,9 +837,8 @@ export const albums: AlbumInterface[] = [
         year: 2021,
         spotifyUrl: "5mIbeOd1gcpiIq08SQ3rxH",
         tags: [
-            "spotify",
-            "16-bit/44,1 kHz",
-            "o:rapidgator"
+            Tag.Spotify,
+            Tag.OriginRapidgator
         ],
     },
     {
@@ -922,9 +847,8 @@ export const albums: AlbumInterface[] = [
         year: 1994,
         spotifyUrl: "5F0IQXuHfTV7SBvZVnXERl",
         tags: [
-            "discman",
-            "16-bit/44,1 kHz",
-            "o:soulseek"
+            Tag.Discman,
+            Tag.OriginSoulseek
         ],
     },
     {
@@ -933,9 +857,8 @@ export const albums: AlbumInterface[] = [
         year: 1989,
         spotifyUrl: "4Q1HXCFg84PfQRZlPCA4SH",
         tags: [
-            "olx:vinyl",
-            "16-bit/44,1 kHz",
-            "o:soulseek"
+            Tag.OlxVinyl,
+            Tag.OriginSoulseek
         ],
     },
     {
@@ -944,9 +867,8 @@ export const albums: AlbumInterface[] = [
         year: 2006,
         spotifyUrl: "5qLvOn0QzAWOqonBc05Ord",
         tags: [
-            "I",
-            "16-bit/44,1 kHz",
-            "o:soulseek"
+            Tag.I,
+            Tag.OriginSoulseek
         ],
     },
     {
@@ -955,9 +877,8 @@ export const albums: AlbumInterface[] = [
         year: 2006,
         spotifyUrl: "1fvWYcbjuycyHpzNPH1Vfk",
         tags: [
-            "II",
-            "16-bit/44,1 kHz",
-            "o:soulseek"
+            Tag.II,
+            Tag.OriginSoulseek
         ],
     },
     {
@@ -966,22 +887,20 @@ export const albums: AlbumInterface[] = [
         year: 1995,
         spotifyUrl: "7CJ59CBDycdjun1rBbSKlK",
         tags: [
-            "II",
-            "16-bit/44,1 kHz",
-            "o:soulseek"
+            Tag.II,
+            Tag.OriginSoulseek
         ],
     },
     {
         artist: "Coma",
-        title: "Pierwsze Wyjście z Mroku",
+        title: "Pierwsze WyjĹ›cie z Mroku",
         year: 2004,
         spotifyUrl: "1T92zoilK8o5NP5GD6C7WX",
         tags: [
-            "biedronka",
-            "I",
-            "olx:out",
-            "16-bit/44,1 kHz",
-            "o:cdrip"
+            Tag.Biedronka,
+            Tag.I,
+            Tag.OlxOut,
+            Tag.OriginCdrip
         ],
     },
     {
@@ -990,9 +909,8 @@ export const albums: AlbumInterface[] = [
         year: 2013,
         spotifyUrl: "1NeunhIyCq0jkezLbOyKDM",
         tags: [
-            "II",
-            "16-bit/44,1 kHz",
-            "o:soulseek"
+            Tag.II,
+            Tag.OriginSoulseek
         ],
     },
     {
@@ -1001,10 +919,9 @@ export const albums: AlbumInterface[] = [
         year: 2015,
         spotifyUrl: "2btszoya78vyT8fwelmVnz",
         tags: [
-            "cd",
-            "biedronka",
-            "16-bit/44,1 kHz",
-            "o:cdrip"
+            Tag.Cd,
+            Tag.Biedronka,
+            Tag.OriginCdrip
         ],
     },
     {
@@ -1013,9 +930,8 @@ export const albums: AlbumInterface[] = [
         year: 1997,
         spotifyUrl: "15eiCGvldXlDbIz9ZQLmw6",
         tags: [
-            "cd",
-            "16-bit/44,1 kHz",
-            "o:cdrip"
+            Tag.Cd,
+            Tag.OriginCdrip
         ],
     },
     {
@@ -1024,9 +940,8 @@ export const albums: AlbumInterface[] = [
         year: 1996,
         spotifyUrl: "0FW74bZJNDROqvqtjerCGh",
         tags: [
-            "olx:out",
-            "16-bit/44,1 kHz",
-            "o:cdrip"
+            Tag.OlxOut,
+            Tag.OriginCdrip
         ],
     },
     {
@@ -1035,11 +950,10 @@ export const albums: AlbumInterface[] = [
         year: 1996,
         spotifyUrl: "1IVa98im1RfxYp6qeOIg2B",
         tags: [
-            "cd",
-            "biedronka",
-            "auto",
-            "16-bit/44,1 kHz",
-            "o:cdrip"
+            Tag.Cd,
+            Tag.Biedronka,
+            Tag.Auto,
+            Tag.OriginCdrip
         ],
     },
     {
@@ -1048,9 +962,8 @@ export const albums: AlbumInterface[] = [
         year: 2006,
         spotifyUrl: "5OISte8J6DV61Vad0W0Cv9",
         tags: [
-            "olx:out",
-            "16-bit/44,1 kHz",
-            "o:cdrip"
+            Tag.OlxOut,
+            Tag.OriginCdrip
         ],
     },
     {
@@ -1059,9 +972,8 @@ export const albums: AlbumInterface[] = [
         year: 1979,
         spotifyUrl: "6WaIQHxEHtZL0RZ62AuY0g",
         tags: [
-            "discman",
-            "16-bit/44,1 kHz",
-            "o:soulseek"
+            Tag.Discman,
+            Tag.OriginSoulseek
         ],
     },
     {
@@ -1070,9 +982,8 @@ export const albums: AlbumInterface[] = [
         year: 2005,
         spotifyUrl: "4dN3wsrnPehrnka1P8Ydaj",
         tags: [
-            "spotify",
-            "16-bit/44,1 kHz",
-            "o:soulseek"
+            Tag.Spotify,
+            Tag.OriginSoulseek
         ],
     },
     {
@@ -1081,10 +992,9 @@ export const albums: AlbumInterface[] = [
         year: 1999,
         spotifyUrl: "0NgdZp0Z9HGsowYxPBYQSV",
         tags: [
-            "spotify",
-            "auto",
-            "16-bit/44,1 kHz",
-            "o:rapidgator"
+            Tag.Spotify,
+            Tag.Auto,
+            Tag.OriginRapidgator
         ],
     },
     {
@@ -1093,9 +1003,8 @@ export const albums: AlbumInterface[] = [
         year: 2007,
         spotifyUrl: "_psychodelikatesy",
         tags: [
-            "discman",
-            "16-bit/44,1 kHz",
-            "o:cdrip"
+            Tag.Discman,
+            Tag.OriginCdrip
         ],
     },
     {
@@ -1104,10 +1013,9 @@ export const albums: AlbumInterface[] = [
         year: 1991,
         spotifyUrl: "5B4PYA7wNN4WdEXdIJu58a",
         tags: [
-            "cd",
-            "media markt",
-            "16-bit/44,1 kHz",
-            "o:cdrip"
+            Tag.Cd,
+            Tag.MediaMarkt,
+            Tag.OriginCdrip
         ],
     },
     {
@@ -1115,10 +1023,10 @@ export const albums: AlbumInterface[] = [
         title: "Oko za Oko",
         year: 2015,
         spotifyUrl: "4IOSxtmBjo4eJXwNH4uiOQ",
+        coverExtension: "JPG",
         tags: [
-            "spotify",
-            "16-bit/44,1 kHz",
-            "no flac"
+            Tag.Spotify,
+            Tag.NoFlac
         ],
     },
     {
@@ -1127,12 +1035,11 @@ export const albums: AlbumInterface[] = [
         year: 1995,
         spotifyUrl: "74cQBDmkkzRBntR064f0SD",
         tags: [
-            "I",
-            "cd",
-            "auto",
-            "media markt",
-            "16-bit/44,1 kHz",
-            "o:cdrip"
+            Tag.I,
+            Tag.Cd,
+            Tag.Auto,
+            Tag.MediaMarkt,
+            Tag.OriginCdrip
         ],
     },
     {
@@ -1141,9 +1048,8 @@ export const albums: AlbumInterface[] = [
         year: 1985,
         spotifyUrl: "10Oqhoq2akSJnurJOPk8xT",
         tags: [
-            "olx:out",
-            "16-bit/44,1 kHz",
-            "o:cdrip"
+            Tag.OlxOut,
+            Tag.OriginCdrip
         ],
     },
     {
@@ -1152,10 +1058,9 @@ export const albums: AlbumInterface[] = [
         year: 1972,
         spotifyUrl: "4Ju17mkQ4MUnQWBg9auMvk",
         tags: [
-            "cd",
-            "prezent",
-            "16-bit/44,1 kHz",
-            "o:cdrip"
+            Tag.Cd,
+            Tag.Prezent,
+            Tag.OriginCdrip
         ],
     },
     {
@@ -1164,9 +1069,8 @@ export const albums: AlbumInterface[] = [
         year: 2000,
         spotifyUrl: "0SgpRABU0OXvl2PjdIWhYX",
         tags: [
-            "I",
-            "16-bit/44,1 kHz",
-            "o:soulseek"
+            Tag.I,
+            Tag.OriginSoulseek
         ],
     },
     {
@@ -1175,9 +1079,8 @@ export const albums: AlbumInterface[] = [
         year: 1989,
         spotifyUrl: "6LEP3L94jnkqjOxYJWPRP0",
         tags: [
-            "II",
-            "16-bit/44,1 kHz",
-            "o:soulseek"
+            Tag.II,
+            Tag.OriginSoulseek
         ],
     },
     {
@@ -1186,9 +1089,8 @@ export const albums: AlbumInterface[] = [
         year: 2018,
         spotifyUrl: "0ZooQ6tlQjugMQ80vetoo4",
         tags: [
-            "spotify",
-            "16-bit/44,1 kHz",
-            "no flac"
+            Tag.Spotify,
+            Tag.NoFlac
         ],
     },
     {
@@ -1197,9 +1099,8 @@ export const albums: AlbumInterface[] = [
         year: 2006,
         spotifyUrl: "6XEXC2Hq7zrdGNHZaPCcDv",
         tags: [
-            "spotify",
-            "16-bit/44,1 kHz",
-            "o:soulseek"
+            Tag.Spotify,
+            Tag.OriginSoulseek
         ],
     },
     {
@@ -1208,9 +1109,8 @@ export const albums: AlbumInterface[] = [
         year: 2001,
         spotifyUrl: "5fKL7vMTXvhR9tov8Kqt3u",
         tags: [
-            "spotify",
-            "16-bit/44,1 kHz",
-            "o:soulseek"
+            Tag.Spotify,
+            Tag.OriginSoulseek
         ],
     },
     {
@@ -1219,10 +1119,9 @@ export const albums: AlbumInterface[] = [
         year: 2014,
         spotifyUrl: "76fT51C9WtCgCcRJlt3PnG",
         tags: [
-            "spotify",
-            "auto",
-            "16-bit/44,1 kHz",
-            "o:soulseek"
+            Tag.Spotify,
+            Tag.Auto,
+            Tag.OriginSoulseek
         ],
     },
     {
@@ -1231,10 +1130,9 @@ export const albums: AlbumInterface[] = [
         year: 2013,
         spotifyUrl: "0ks45m1bsP2JsZpM5D2FFA",
         tags: [
-            "spotify",
-            "16-bit/44,1 kHz",
-            "o:soulseek",
-            "x"
+            Tag.Spotify,
+            Tag.OriginSoulseek,
+            Tag.X
         ],
     },
     {
@@ -1243,10 +1141,9 @@ export const albums: AlbumInterface[] = [
         year: 2003,
         spotifyUrl: "5tQjJRsqTVaK9NZ7Rh02en",
         tags: [
-            "media markt",
-            "olx:out",
-            "16-bit/44,1 kHz",
-            "o:cdrip"
+            Tag.MediaMarkt,
+            Tag.OlxOut,
+            Tag.OriginCdrip
         ],
     },
     {
@@ -1255,9 +1152,8 @@ export const albums: AlbumInterface[] = [
         year: 2016,
         spotifyUrl: "1FSVYIieMIpJCWjucTjrao",
         tags: [
-            "spotify",
-            "16-bit/44,1 kHz",
-            "o:soulseek"
+            Tag.Spotify,
+            Tag.OriginSoulseek
         ],
     },
     {
@@ -1266,9 +1162,9 @@ export const albums: AlbumInterface[] = [
         year: 2013,
         spotifyUrl: "78bpIziExqiI9qztvNFlQu",
         tags: [
-            "spotify",
-            "24-bit/44,1 kHz",
-            "o:flacmusicfinder"
+            Tag.Spotify,
+            Tag.TwentyFourBit441Khz,
+            Tag.OriginFlacMusicFinder
         ],
     },
     {
@@ -1277,9 +1173,8 @@ export const albums: AlbumInterface[] = [
         year: 2020,
         spotifyUrl: "7MfryRchXoNRwG5YbbDL1S",
         tags: [
-            "spotify",
-            "16-bit/44,1 kHz",
-            "o:soulseek"
+            Tag.Spotify,
+            Tag.OriginSoulseek
         ],
     },
     {
@@ -1288,9 +1183,8 @@ export const albums: AlbumInterface[] = [
         year: 2004,
         spotifyUrl: "0aDCpYtFdQ0S8C3oAtOonk",
         tags: [
-            "I",
-            "16-bit/44,1 kHz",
-            "o:soulseek"
+            Tag.I,
+            Tag.OriginSoulseek
         ],
     },
     {
@@ -1299,9 +1193,8 @@ export const albums: AlbumInterface[] = [
         year: 2017,
         spotifyUrl: "01JmOnNGgaxannxcQUxaey",
         tags: [
-            "spotify",
-            "16-bit/44,1 kHz",
-            "o:rapidgator"
+            Tag.Spotify,
+            Tag.OriginRapidgator
         ],
     },
     {
@@ -1310,9 +1203,8 @@ export const albums: AlbumInterface[] = [
         year: 2009,
         spotifyUrl: "6KqL8MggBekUxqa1GYuVyY",
         tags: [
-            "II",
-            "16-bit/44,1 kHz",
-            "o:soulseek"
+            Tag.II,
+            Tag.OriginSoulseek
         ],
     },
     {
@@ -1321,10 +1213,9 @@ export const albums: AlbumInterface[] = [
         year: 2011,
         spotifyUrl: "5cF5m1f2MPh099b7kh6mqh",
         tags: [
-            "spotify",
-            "auto",
-            "16-bit/44,1 kHz",
-            "no flac"
+            Tag.Spotify,
+            Tag.Auto,
+            Tag.NoFlac
         ],
     },
     {
@@ -1333,9 +1224,9 @@ export const albums: AlbumInterface[] = [
         year: 2015,
         spotifyUrl: "1JgiHuKdZNP2Z6XOJtBjyz",
         tags: [
-            "spotify",
-            "24-bit/44,1 kHz",
-            "o:soulseek"
+            Tag.Spotify,
+            Tag.TwentyFourBit441Khz,
+            Tag.OriginSoulseek
         ],
     },
     {
@@ -1344,9 +1235,8 @@ export const albums: AlbumInterface[] = [
         year: 2001,
         spotifyUrl: "5l5m1hnH4punS1GQXgEi3T",
         tags: [
-            "II",
-            "16-bit/44,1 kHz",
-            "o:soulseek"
+            Tag.II,
+            Tag.OriginSoulseek
         ],
     },
     {
@@ -1355,10 +1245,9 @@ export const albums: AlbumInterface[] = [
         year: 1992,
         spotifyUrl: "4LaRYkT4oy47wEuQgkLBul",
         tags: [
-            "cd",
-            "olx:vinyl",
-            "16-bit/44,1 kHz",
-            "o:cdrip"
+            Tag.Cd,
+            Tag.OlxVinyl,
+            Tag.OriginCdrip
         ],
     },
     {
@@ -1367,10 +1256,9 @@ export const albums: AlbumInterface[] = [
         year: 2010,
         spotifyUrl: "1IvD11R4ZGTm4rSveWc2Xg",
         tags: [
-            "cd",
-            "prezent",
-            "16-bit/44,1 kHz",
-            "o:cdrip"
+            Tag.Cd,
+            Tag.Prezent,
+            Tag.OriginCdrip
         ],
     },
     {
@@ -1379,11 +1267,10 @@ export const albums: AlbumInterface[] = [
         year: 1980,
         spotifyUrl: "_helicopters",
         tags: [
-            "discman",
-            "cd",
-            "media markt",
-            "16-bit/44,1 kHz",
-            "o:cdrip"
+            Tag.Discman,
+            Tag.Cd,
+            Tag.MediaMarkt,
+            Tag.OriginCdrip
         ],
     },
     {
@@ -1392,11 +1279,10 @@ export const albums: AlbumInterface[] = [
         year: 2004,
         spotifyUrl: "09qHS2BgOLqi3SMkbauxdJ",
         tags: [
-            "discman",
-            "I",
-            "auto",
-            "16-bit/44,1 kHz",
-            "o:soulseek"
+            Tag.Discman,
+            Tag.I,
+            Tag.Auto,
+            Tag.OriginSoulseek
         ],
     },
     {
@@ -1405,9 +1291,8 @@ export const albums: AlbumInterface[] = [
         year: 1994,
         spotifyUrl: "1xHWwGSoF1DNE4hqgBRkJX",
         tags: [
-            "olx:out",
-            "16-bit/44,1 kHz",
-            "o:cdrip"
+            Tag.OlxOut,
+            Tag.OriginCdrip
         ],
     },
     {
@@ -1416,11 +1301,10 @@ export const albums: AlbumInterface[] = [
         year: 2012,
         spotifyUrl: "65XXZG2pFzK99xeOuVLHP2",
         tags: [
-            "cd",
-            "biedronka",
-            "auto",
-            "16-bit/44,1 kHz",
-            "o:cdrip"
+            Tag.Cd,
+            Tag.Biedronka,
+            Tag.Auto,
+            Tag.OriginCdrip
         ],
     },
     {
@@ -1429,10 +1313,9 @@ export const albums: AlbumInterface[] = [
         year: 2003,
         spotifyUrl: "0CA2EVHhRPR5VPV78KZw89",
         tags: [
-            "II",
-            "cd",
-            "16-bit/44,1 kHz",
-            "o:cdrip"
+            Tag.II,
+            Tag.Cd,
+            Tag.OriginCdrip
         ],
     },
     {
@@ -1441,11 +1324,10 @@ export const albums: AlbumInterface[] = [
         year: 1990,
         spotifyUrl: "63HdXCn0Xz1pRZc2GzMw7k",
         tags: [
-            "cd",
-            "media markt",
-            "II",
-            "16-bit/44,1 kHz",
-            "o:cdrip"
+            Tag.Cd,
+            Tag.MediaMarkt,
+            Tag.II,
+            Tag.OriginCdrip
         ],
     },
     {
@@ -1454,9 +1336,8 @@ export const albums: AlbumInterface[] = [
         year: 2011,
         spotifyUrl: "2gMWwDIxxGIiblnv1pQHyd",
         tags: [
-            "spotify",
-            "16-bit/44,1 kHz",
-            "o:soulseek"
+            Tag.Spotify,
+            Tag.OriginSoulseek
         ],
     },
     {
@@ -1465,9 +1346,8 @@ export const albums: AlbumInterface[] = [
         year: 1973,
         spotifyUrl: "4LH4d3cOWNNsVw41Gqt2kv",
         tags: [
-            "discman",
-            "16-bit/44,1 kHz",
-            "o:soulseek"
+            Tag.Discman,
+            Tag.OriginSoulseek
         ],
     },
     {
@@ -1476,9 +1356,8 @@ export const albums: AlbumInterface[] = [
         year: 2005,
         spotifyUrl: "30iqYID1JMBXLVFfErwTSd",
         tags: [
-            "olx",
-            "16-bit/44,1 kHz",
-            "o:cdrip"
+            Tag.Olx,
+            Tag.OriginCdrip
         ],
     },
     {
@@ -1487,10 +1366,9 @@ export const albums: AlbumInterface[] = [
         year: 1994,
         spotifyUrl: "4FCoFSNIFhK36holxHWCnc",
         tags: [
-            "cd",
-            "media markt",
-            "16-bit/44,1 kHz",
-            "o:cdrip"
+            Tag.Cd,
+            Tag.MediaMarkt,
+            Tag.OriginCdrip
         ],
     },
     {
@@ -1499,10 +1377,9 @@ export const albums: AlbumInterface[] = [
         year: 1991,
         spotifyUrl: "1DCI2yWmV4UI7Aga71yx9B",
         tags: [
-            "cd",
-            "II",
-            "16-bit/44,1 kHz",
-            "o:cdrip"
+            Tag.Cd,
+            Tag.II,
+            Tag.OriginCdrip
         ],
     },
     {
@@ -1511,9 +1388,8 @@ export const albums: AlbumInterface[] = [
         year: 2015,
         spotifyUrl: "4HAjhTdm5gC7CnNmFkcssa",
         tags: [
-            "spotify",
-            "16-bit/44,1 kHz",
-            "o:soulseek"
+            Tag.Spotify,
+            Tag.OriginSoulseek
         ],
     },
     {
@@ -1522,9 +1398,8 @@ export const albums: AlbumInterface[] = [
         year: 2000,
         spotifyUrl: "7kCSKMU38mwFl65RCCGBs8",
         tags: [
-            "III",
-            "16-bit/44,1 kHz",
-                      "mp3"
+            Tag.III,
+            Tag.Mp3
         ],
     },
     {
@@ -1533,9 +1408,8 @@ export const albums: AlbumInterface[] = [
         year: 1987,
         spotifyUrl: "0kBy2KA6BuCWveFo88VmMX",
         tags: [
-            "olx",
-            "16-bit/44,1 kHz",
-            "o:cdrip"
+            Tag.Olx,
+            Tag.OriginCdrip
         ],
     },
     {
@@ -1544,9 +1418,8 @@ export const albums: AlbumInterface[] = [
         year: 2023,
         spotifyUrl: "5o1l7G0Dr8GGzUaFnTuhNE",
         tags: [
-            "o:rapidgator",
-            "16-bit/44,1 kHz",
-            "x"
+            Tag.OriginRapidgator,
+            Tag.X
         ],
     },
     {
@@ -1555,8 +1428,7 @@ export const albums: AlbumInterface[] = [
         year: 2026,
         spotifyUrl: "5PrXYFUyJMPvpGLFg1cqOe",
         tags: [
-            "o:soulseek",
-            "16-bit/44,1 kHz"
+            Tag.OriginSoulseek,
         ],
     },
     {
@@ -1565,9 +1437,8 @@ export const albums: AlbumInterface[] = [
         year: 2021,
         spotifyUrl: "5x7iT8UItd7SdDwf6tQzpb",
         tags: [
-            "o:rapidgator",
-            "16-bit/44,1 kHz",
-            "x"
+            Tag.OriginRapidgator,
+            Tag.X
         ],
     },
     {
@@ -1576,9 +1447,8 @@ export const albums: AlbumInterface[] = [
         year: 2021,
         spotifyUrl: "4G14ImdbfLm9adBZfNuMjg",
         tags: [
-            "o:rapidgator",
-            "16-bit/44,1 kHz",
-            "x"
+            Tag.OriginRapidgator,
+            Tag.X
         ],
     },
     {
@@ -1587,9 +1457,8 @@ export const albums: AlbumInterface[] = [
         year: 1991,
         spotifyUrl: "_incarnation",
         tags: [
-            "o:cdrip",
-            "16-bit/44,1 kHz",
-            "discman"
+            Tag.OriginCdrip,
+            Tag.Discman
         ],
     },
     {
@@ -1598,9 +1467,9 @@ export const albums: AlbumInterface[] = [
         year: 2000,
         spotifyUrl: "6hPkbAV3ZXpGZBGUvL6jVM",
         tags: [
-            "o:soulseek",
-            "24-bit/96 kHz",
-            "x"
+            Tag.OriginSoulseek,
+            Tag.TwentyFourBit96Khz,
+            Tag.X
         ],
     },
     {
@@ -1609,9 +1478,8 @@ export const albums: AlbumInterface[] = [
         year: 2007,
         spotifyUrl: "2tlTBLz2w52rpGCLBGyGw6",
         tags: [
-            "o:rapidgator",
-            "16-bit/44,1 kHz",
-            "x"
+            Tag.OriginRapidgator,
+            Tag.X
         ],
     },
     {
@@ -1620,8 +1488,7 @@ export const albums: AlbumInterface[] = [
         year: 2014,
         spotifyUrl: "1b6IlVlHRzbkcAWIpXaW37",
         tags: [
-            "o:soulseek",
-            "16-bit/44,1 kHz"
+            Tag.OriginSoulseek,
         ],
     },
     {
@@ -1630,8 +1497,7 @@ export const albums: AlbumInterface[] = [
         year: 2021,
         spotifyUrl: "7KF1Ain9mYYlg5M46g0i4A",
         tags: [
-            "o:rapidgator",
-            "16-bit/44,1 kHz"
+            Tag.OriginRapidgator,
         ],
     },
     {
@@ -1640,8 +1506,8 @@ export const albums: AlbumInterface[] = [
         year: 2025,
         spotifyUrl: "6Vchu5Bbi4C0nUNSprj6lD",
         tags: [
-            "o:soulseek",
-            "24-bit/44,1 kHz"
+            Tag.OriginSoulseek,
+            Tag.TwentyFourBit441Khz
         ],
     },
     {
@@ -1650,9 +1516,8 @@ export const albums: AlbumInterface[] = [
         year: 2021,
         spotifyUrl: "5pCBuV5mhXIUonyuWL5EZd",
         tags: [
-            "o:rapidgator",
-            "16-bit/44,1 kHz",
-            "spotify"
+            Tag.OriginRapidgator,
+            Tag.Spotify
         ],
     },
     {
@@ -1661,8 +1526,7 @@ export const albums: AlbumInterface[] = [
         year: 2014,
         spotifyUrl: "0YRIP2ccK2v8kWW7SdDA7R",
         tags: [
-            "o:soulseek",
-            "16-bit/44,1 kHz"
+            Tag.OriginSoulseek,
         ],
     },
     {
@@ -1671,9 +1535,8 @@ export const albums: AlbumInterface[] = [
         year: 2023,
         spotifyUrl: "2ZTDmH94OLjeNaOvT7Ngwk",
         tags: [
-            "o:rapidgator",
-            "16-bit/44,1 kHz", 
-            "x"
+            Tag.OriginRapidgator,
+            Tag.X
         ],
     },
     {
@@ -1682,8 +1545,7 @@ export const albums: AlbumInterface[] = [
         year: 2020,
         spotifyUrl: "27evZfDFySSv4dcje8afMI",
         tags: [
-            "o:flacmusicfinder",
-            "16-bit/44,1 kHz"
+            Tag.OriginFlacMusicFinder,
         ],
     },
     {
@@ -1692,8 +1554,7 @@ export const albums: AlbumInterface[] = [
         year: 1996,
         spotifyUrl: "2JJEIN6LvQJQTJDfnYdDAe",
         tags: [
-            "o:rapidgator",
-            "16-bit/44,1 kHz"
+            Tag.OriginRapidgator,
         ],
     },
     {
@@ -1702,9 +1563,7 @@ export const albums: AlbumInterface[] = [
         year: 2018,
         spotifyUrl: "1C4NZ4GnwIRNY0glvRpOon",
         tags: [
-
-            "16-bit/44,1 kHz",
-            "o:rapidgator"
+            Tag.OriginRapidgator
         ],
     },
     {
@@ -1713,8 +1572,8 @@ export const albums: AlbumInterface[] = [
         year: 2026,
         spotifyUrl: "3FqqIeynZXFBcyLS9FlWMo",
         tags: [
-            "o:flacmusicfinder",
-            "24-bit/48 kHz"
+            Tag.OriginFlacMusicFinder,
+            Tag.TwentyFourBit48Khz
         ],
     }
 ]
