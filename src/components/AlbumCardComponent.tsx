@@ -6,7 +6,7 @@ import { TagComponent } from "./TagComponent";
 import { useAppContext } from "../hooks/useAppContext";
 
 export const AlbumCardComponent: FC<AlbumComponentInterface> = (props): JSX.Element => {
-  const { artist, spotifyUrl, tags, title, year } = props.data;
+  const { artist, coverExtension = "jpg", spotifyUrl, tags, title, year } = props.data;
 
   const { album, selectedTags, setQuery, setSelectedTags, setAlbum } = useAppContext();
 
@@ -31,7 +31,7 @@ export const AlbumCardComponent: FC<AlbumComponentInterface> = (props): JSX.Elem
               alt={desc}
               className="shadow"
               height={coverSize}
-              src={`covers/${spotifyUrl}.jpg`}
+              src={`covers/${spotifyUrl}.${coverExtension}`}
               title={desc}
               width={coverSize}
             />
