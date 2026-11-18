@@ -4,14 +4,12 @@ import { AlbumInterface } from "../common/AlbumInterface";
 import { ContextInterface } from "./interfaces/ContextInterface";
 import { ContextProviderInterface } from "./interfaces/ContextProviderInterface";
 import { Sorting } from "../common/SortingEnum";
-import { ref } from "../firebase/Firebase";
-import { useCollectionDataOnce } from "react-firebase-hooks/firestore";
+import { albums as albumData } from "../albums";
 
 export const AppContext = createContext<ContextInterface>({
   albums: [],
   albumsCount: 0,
   tagCounts: [],
-  loading: true,
   album: undefined,
   query: "",
   selectedTags: [],
@@ -31,11 +29,7 @@ export const AppContext = createContext<ContextInterface>({
 });
 
 export const AppContextProvider: FC<ContextProviderInterface> = ({ children }) => {
-  const [data, loading] = useCollectionDataOnce(ref);
-
   const [album, setAlbum] = useState<AlbumInterface | undefined>(undefined);
-  const [albums, setAlbums] = useState<AlbumInterface[]>([]);
-  const [albumsCount, setAlbumsCount] = useState<number>(0);
 
   const [query, setQuery] = useState<string>("");
   const [selectedTags, setSelectedTags] = useState<string[]>([]);
@@ -43,7 +37,7 @@ export const AppContextProvider: FC<ContextProviderInterface> = ({ children }) =
 
   const tagCounts = useMemo(() => {
     const counts = new Map<string, number>();
-    data?.forEach((album: AlbumInterface) => {
+    albumData.forEach((album: AlbumInterface) => {
       new Set(album.tags).forEach((tag) => {
         counts.set(tag, (counts.get(tag) ?? 0) + 1);
       });
@@ -52,67 +46,63 @@ export const AppContextProvider: FC<ContextProviderInterface> = ({ children }) =
     return Array.from(counts, ([tag, count]) => ({ tag, count })).sort((a, b) =>
       a.tag.localeCompare(b.tag)
     );
-  }, [data]);
+  }, []);
+
+  const filteredAlbums = useMemo(
+    () =>
+      albumData
+        .filter((album: AlbumInterface) => {
+          return (
+            album.artist.toLowerCase().includes(query) ||
+            album.title.toLowerCase().includes(query) ||
+            album.year.toString().includes(query) ||
+            album.tags.includes(query)
+          ) && selectedTags.every((tag) => album.tags.includes(tag));
+        })
+        .sort((a: AlbumInterface, b: AlbumInterface) => {
+          switch (sorting) {
+            case Sorting.ByArtistAscending:
+              if (a.artist < b.artist) return -1;
+              if (a.artist > b.artist) return 1;
+              return a.year - b.year;
+            case Sorting.ByArtistDescending:
+              if (a.artist > b.artist) return -1;
+              if (a.artist < b.artist) return 1;
+              return b.year - a.year;
+            case Sorting.ByTitleAscending:
+              return a.title.localeCompare(b.title);
+            case Sorting.ByTitleDescending:
+              return b.title.localeCompare(a.title);
+            case Sorting.ByYearAscending:
+              if (a.year === b.year) return a.artist.localeCompare(b.artist);
+              return a.year - b.year;
+            case Sorting.ByYearDescending:
+              if (a.year === b.year) return b.artist.localeCompare(a.artist);
+              return b.year - a.year;
+            default:
+              return Math.random() - 0.5;
+          }
+        }),
+    [query, selectedTags, sorting]
+  );
 
   useEffect(() => {
-    if (data !== undefined) {
-      setAlbums(
-        data
-          .filter((album: AlbumInterface) => {
-            return (
-              album.artist.toLowerCase().includes(query) ||
-              album.title.toLowerCase().includes(query) ||
-              album.year.toString().includes(query) ||
-              album.tags.includes(query)
-            ) && selectedTags.every((tag) => album.tags.includes(tag));
-          })
-          .sort((a: AlbumInterface, b: AlbumInterface) => {
-            switch (sorting) {
-              case Sorting.ByArtistAscending:
-                if (a.artist < b.artist) return -1;
-                if (a.artist > b.artist) return 1;
-                return a.year - b.year;
-              case Sorting.ByArtistDescending:
-                if (a.artist > b.artist) return -1;
-                if (a.artist < b.artist) return 1;
-                return b.year - a.year;
-              case Sorting.ByTitleAscending:
-                return a.title.localeCompare(b.title);
-              case Sorting.ByTitleDescending:
-                return b.title.localeCompare(a.title);
-              case Sorting.ByYearAscending:
-                if (a.year === b.year) return a.artist.localeCompare(b.artist);
-                return a.year - b.year;
-              case Sorting.ByYearDescending:
-                if (a.year === b.year) return b.artist.localeCompare(a.artist);
-                return b.year - a.year;
-              default:
-                return Math.random() - 0.5;
-            }
-          })
-      );
-    }
     setAlbum(undefined);
-  }, [data, query, selectedTags, sorting]);
-
-  useEffect(() => {
-    setAlbumsCount(albums.length);
     window.scrollTo(0, 0);
-  }, [albums]);
+  }, [filteredAlbums]);
 
   return (
     <AppContext.Provider
       value={{
         album: album,
-        albums: albums,
-        albumsCount: albumsCount,
+        albums: filteredAlbums,
+        albumsCount: filteredAlbums.length,
         tagCounts: tagCounts,
-        loading: loading,
         query: query,
         selectedTags: selectedTags,
         sorting: sorting,
         setAlbum: (spotifyUrl: string | undefined) => {
-          const album = albums.find((album) => album.spotifyUrl === spotifyUrl);
+          const album = filteredAlbums.find((album) => album.spotifyUrl === spotifyUrl);
           setAlbum(album);
         },
         setQuery: setQuery,
