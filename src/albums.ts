@@ -603,7 +603,7 @@ export const albums: AlbumInterface[] = [
         spotifyUrl: "61XZkrTQMo602r1e5rgRka",
         tags: [
             "III",
-            "16-bit/44,1 kHz",
+            "16-bit/96 kHz",
             "o:soulseek"
         ],
     },
@@ -864,7 +864,7 @@ export const albums: AlbumInterface[] = [
         artist: "Pink Floyd",
         title: "Animals",
         year: 1977,
-        spotifyUrl: "21jUB9RqplD6OqtsTjKBnO",
+        spotifyUrl: "0Unhg884FzoZhVWyrMvtAG",
         tags: [
             "discman",
             "24-bit/192 kHz",
