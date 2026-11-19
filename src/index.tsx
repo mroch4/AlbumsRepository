@@ -1,6 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./index.css";
-import "./loader.css";
 
 import { AppContextProvider } from "./context/AppContext";
 import { HeaderComponent } from "./components/HeaderComponent";

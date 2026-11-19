@@ -30,6 +30,7 @@ const getRowSize = (width: number) => {
 
 export const AlbumCoverComponent: FC<AlbumComponentInterface> = (props): JSX.Element => {
   const { artist, coverExtension = "jpg", spotifyUrl, title, year } = props.data;
+  const isSpotifyAlbum = !spotifyUrl.startsWith("_");
 
   const { setAlbum } = useAppContext();
 
@@ -46,10 +47,10 @@ export const AlbumCoverComponent: FC<AlbumComponentInterface> = (props): JSX.Ele
   return (
     <img
       alt={desc}
-      className="album-cover pointer"
+      className={`album-cover${isSpotifyAlbum ? " pointer" : ""}`}
       height={`${imgSize}%`}
       loading="lazy"
-      onClick={() => setAlbum(spotifyUrl)}
+      onClick={isSpotifyAlbum ? () => setAlbum(spotifyUrl) : undefined}
       src={`covers/${spotifyUrl}.${coverExtension}`}
       title={desc}
       width={`${imgSize}%`}

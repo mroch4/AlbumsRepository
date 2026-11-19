@@ -9,7 +9,7 @@ export const albums: AlbumInterface[] = [
         tags: [
             Tag.Cd,
             Tag.Prezent,
-            Tag.I,
+            Tag.Year2008To2011,
             Tag.OriginCdrip
         ],
     },
@@ -19,7 +19,7 @@ export const albums: AlbumInterface[] = [
         year: 2014,
         spotifyUrl: "25xQevIYTCKcvsw9fyZoDb",
         tags: [
-            Tag.Spotify,
+            Tag.Year2020To2023,
             Tag.OriginSoulseek
         ],
     },
@@ -29,8 +29,8 @@ export const albums: AlbumInterface[] = [
         year: 2006,
         spotifyUrl: "3FKvu05whTUtsoMwnXEQ10",
         tags: [
-            Tag.II,
-            Tag.Auto,
+            Tag.Year2011To2014,
+            Tag.Mazda,
             Tag.OriginSoulseek
         ],
     },
@@ -50,7 +50,7 @@ export const albums: AlbumInterface[] = [
         year: 2014,
         spotifyUrl: "5eqhQF3HIVdgwfotwNPMFK",
         tags: [
-            Tag.II,
+            Tag.Year2011To2014,
             Tag.OriginSoulseek
         ],
     },
@@ -60,7 +60,7 @@ export const albums: AlbumInterface[] = [
         year: 2006,
         spotifyUrl: "67sfyNkOtMZp01K22w03sl",
         tags: [
-            Tag.II,
+            Tag.Year2011To2014,
             Tag.Mp3
         ],
     },
@@ -70,7 +70,7 @@ export const albums: AlbumInterface[] = [
         year: 2012,
         spotifyUrl: "3hRE5kwKGasVPXvcIpx2xv",
         tags: [
-            Tag.III,
+            Tag.Year2020To2023,
             Tag.OriginSoulseek
         ],
     },
@@ -80,7 +80,7 @@ export const albums: AlbumInterface[] = [
         year: 1996,
         spotifyUrl: "6yWMN087PgSimbcVmHLEwG",
         tags: [
-            Tag.II,
+            Tag.Year2011To2014,
             Tag.OriginSoulseek
         ],
     },
@@ -90,7 +90,7 @@ export const albums: AlbumInterface[] = [
         year: 2014,
         spotifyUrl: "2mepXKJlgU28VBwkSXjWfY",
         tags: [
-            Tag.Spotify,
+            Tag.Year2020To2023,
             Tag.OriginFlacMusicFinder
         ],
     },
@@ -101,8 +101,8 @@ export const albums: AlbumInterface[] = [
         spotifyUrl: "7ikuEzL6xeAgu6yT6YVLy7",
         tags: [
             Tag.Discman,
-            Tag.I,
-            Tag.Auto,
+            Tag.Year2008To2011,
+            Tag.Mazda,
             Tag.TwentyFourBit48Khz,
             Tag.OriginSoulseek
         ],
@@ -113,7 +113,7 @@ export const albums: AlbumInterface[] = [
         year: 2018,
         spotifyUrl: "6rBnEJJUih41OU4AemGs4y",
         tags: [
-            Tag.Spotify,
+            Tag.Year2020To2023,
             Tag.OriginSoulseek
         ],
     },
@@ -144,7 +144,7 @@ export const albums: AlbumInterface[] = [
         year: 1994,
         spotifyUrl: "2vi1ddPi3fY7vePMqxUVob",
         tags: [
-            Tag.II,
+            Tag.Year2011To2014,
             Tag.OriginRapidgator
         ],
     },
@@ -154,7 +154,7 @@ export const albums: AlbumInterface[] = [
         year: 2004,
         spotifyUrl: "2W4FYloQ0s0Fb8lKawb0iC",
         tags: [
-            Tag.II,
+            Tag.Year2011To2014,
             Tag.OriginSoulseek
         ],
     },
@@ -174,7 +174,7 @@ export const albums: AlbumInterface[] = [
         year: 2012,
         spotifyUrl: "0Rm1Q7jINtrkDbfXfqnlYg",
         tags: [
-            Tag.II,
+            Tag.Year2011To2014,
             Tag.OriginSoulseek
         ],
     },
@@ -184,7 +184,7 @@ export const albums: AlbumInterface[] = [
         year: 2017,
         spotifyUrl: "3Rz6kF8eGqrDOEteo5YsBj",
         tags: [
-            Tag.Spotify,
+            Tag.Year2020To2023,
             Tag.OriginFlacMusicFinder
         ],
     },
@@ -196,7 +196,7 @@ export const albums: AlbumInterface[] = [
         tags: [
             Tag.Cd,
             Tag.OlxIn,
-            Tag.Auto,
+            Tag.Mazda,
             Tag.OriginCdrip
         ],
     },
@@ -206,7 +206,7 @@ export const albums: AlbumInterface[] = [
         year: 2017,
         spotifyUrl: "4FYvuWhNshZBsOT0fptzR3",
         tags: [
-            Tag.Spotify,
+            Tag.Year2020To2023,
             Tag.OriginFlacMusicFinder
         ],
     },
@@ -226,7 +226,7 @@ export const albums: AlbumInterface[] = [
         year: 2018,
         spotifyUrl: "3CHKkXkiVHGzTVvOyX4aU2",
         tags: [
-            Tag.Spotify,
+            Tag.Year2020To2023,
             Tag.OriginRapidgator
         ],
     },
@@ -236,8 +236,8 @@ export const albums: AlbumInterface[] = [
         year: 2016,
         spotifyUrl: "43otFXrY0bgaq5fB3GrZj6",
         tags: [
-            Tag.III,
-            Tag.Auto,
+            Tag.Year2014To2017,
+            Tag.Mazda,
             Tag.OriginSoulseek
         ],
     },
@@ -247,8 +247,8 @@ export const albums: AlbumInterface[] = [
         year: 2004,
         spotifyUrl: "4bCbQx08L6clCZKWu0Jmiq",
         tags: [
-            Tag.III,
-            Tag.Auto,
+            Tag.Year2014To2017,
+            Tag.Mazda,
             Tag.OriginSoulseek
         ],
     },
@@ -280,7 +280,7 @@ export const albums: AlbumInterface[] = [
         spotifyUrl: "7xl50xr9NDkd3i2kBbzsNZ",
         tags: [
             Tag.Cd,
-            Tag.I,
+            Tag.Year2008To2011,
             Tag.Pirat,
             Tag.Discman,
             Tag.OriginSoulseek
@@ -298,12 +298,12 @@ export const albums: AlbumInterface[] = [
     },
     {
         artist: "Coma",
-        title: "Zaprzepaszczone SiĹ‚y Wielkiej Armii ĹšwiÄ™tych ZnakĂłw",
+        title: "Zaprzepaszczone Siły Wielkiej Armii Świętych Znaków",
         year: 2006,
         spotifyUrl: "4Y25amnFEzgbmBQQ98YqAm",
         tags: [
             Tag.Biedronka,
-            Tag.I,
+            Tag.Year2008To2011,
             Tag.OlxOut,
             Tag.OriginCdrip
         ],
@@ -316,7 +316,8 @@ export const albums: AlbumInterface[] = [
         tags: [
             Tag.Cd,
             Tag.OlxIn,
-            Tag.OriginCdrip
+            Tag.OriginCdrip,
+            Tag.Year2020To2023
         ],
     },
     {
@@ -327,7 +328,7 @@ export const albums: AlbumInterface[] = [
         tags: [
             Tag.Cd,
             Tag.Prezent,
-            Tag.I,
+            Tag.Year2008To2011,
             Tag.OriginCdrip
         ],
     },
@@ -358,8 +359,8 @@ export const albums: AlbumInterface[] = [
         year: 2017,
         spotifyUrl: "3hEWSTHddLUQvegmX0wOk4",
         tags: [
-            Tag.III,
-            Tag.Auto,
+            Tag.Year2014To2017,
+            Tag.Mazda,
             Tag.OriginSoulseek
         ],
     },
@@ -369,7 +370,7 @@ export const albums: AlbumInterface[] = [
         year: 2008,
         spotifyUrl: "6tgIXjV7flQReoAB2Hfe2z",
         tags: [
-            Tag.II,
+            Tag.Year2014To2017,
             Tag.Mp3
         ],
     },
@@ -379,7 +380,7 @@ export const albums: AlbumInterface[] = [
         year: 2021,
         spotifyUrl: "05aqnnpYVOvsX0SIzmIuxi",
         tags: [
-            Tag.Spotify,
+            Tag.Year2020To2023,
             Tag.OriginRapidgator
         ],
     },
@@ -391,7 +392,7 @@ export const albums: AlbumInterface[] = [
         tags: [
             Tag.Discman,
             Tag.Cd,
-            Tag.I,
+            Tag.Year2008To2011,
             Tag.Pirat,
             Tag.OriginCdrip
         ],
@@ -402,7 +403,7 @@ export const albums: AlbumInterface[] = [
         year: 1993,
         spotifyUrl: "3Esn6LoXuWtLZNYq8FCzr0",
         tags: [
-            Tag.II,
+            Tag.Year2011To2014,
             Tag.OlxOut,
             Tag.OriginCdrip
         ],
@@ -424,7 +425,7 @@ export const albums: AlbumInterface[] = [
         year: 2003,
         spotifyUrl: "4fygErqiNgFUic5hU42Z3E",
         tags: [
-            Tag.Spotify,
+            Tag.Year2020To2023,
             Tag.OriginSoulseek
         ],
     },
@@ -445,7 +446,7 @@ export const albums: AlbumInterface[] = [
         year: 2008,
         spotifyUrl: "2XbZLK8epe8hNnh8fo1ArW",
         tags: [
-            Tag.II,
+            Tag.Year2011To2014,
             Tag.OriginSoulseek
         ],
     },
@@ -455,17 +456,17 @@ export const albums: AlbumInterface[] = [
         year: 2022,
         spotifyUrl: "660c34OZzJ4gUd0rXe8ARp",
         tags: [
-            Tag.Spotify,
+            Tag.Year2023To2025,
             Tag.OriginFlacMusicFinder
         ],
     },
     {
-        artist: "Dawid PodsiadĹ‚o",
+        artist: "Dawid Podsiadło",
         title: "Annoyance And Disappointment",
         year: 2015,
         spotifyUrl: "2OHeBBlmX51KCY1UTqxDZ4",
         tags: [
-            Tag.III,
+            Tag.Year2014To2017,
             Tag.OriginSoulseek
         ],
     },
@@ -475,8 +476,8 @@ export const albums: AlbumInterface[] = [
         year: 2007,
         spotifyUrl: "6MY4dyk9U9A5bkxEIk22jj",
         tags: [
-            Tag.III,
-            Tag.Auto,
+            Tag.Year2014To2017,
+            Tag.Mazda,
             Tag.OriginSoulseek
         ],
     },
@@ -498,7 +499,8 @@ export const albums: AlbumInterface[] = [
         tags: [
             Tag.Cd,
             Tag.MediaMarkt,
-            Tag.OriginCdrip
+            Tag.OriginCdrip,
+            Tag.Year2011To2014
         ],
     },
     {
@@ -507,7 +509,7 @@ export const albums: AlbumInterface[] = [
         year: 2012,
         spotifyUrl: "4RdFUAZucARCFnGjwmJRC0",
         tags: [
-            Tag.III,
+            Tag.Year2014To2017,
             Tag.OriginSoulseek,
             Tag.Mp3
         ],
@@ -520,7 +522,7 @@ export const albums: AlbumInterface[] = [
         tags: [
             Tag.Cd,
             Tag.Prezent,
-            Tag.I,
+            Tag.Year2008To2011,
             Tag.OriginCdrip
         ],
     },
@@ -530,8 +532,8 @@ export const albums: AlbumInterface[] = [
         year: 2011,
         spotifyUrl: "5wZtSIvijWCMc1vlPFqAyB",
         tags: [
-            Tag.III,
-            Tag.Auto,
+            Tag.Year2014To2017,
+            Tag.Mazda,
             Tag.OriginSoulseek
         ],
     },
@@ -543,7 +545,8 @@ export const albums: AlbumInterface[] = [
         tags: [
             Tag.Cd,
             Tag.Biedronka,
-            Tag.OriginCdrip
+            Tag.OriginCdrip,
+            Tag.Year2020To2023
         ],
     },
     {
@@ -552,7 +555,7 @@ export const albums: AlbumInterface[] = [
         year: 2013,
         spotifyUrl: "61XZkrTQMo602r1e5rgRka",
         tags: [
-            Tag.III,
+            Tag.Year2014To2017,
             Tag.TwentyFourBit96Khz,
             Tag.OriginSoulseek
         ],
@@ -573,8 +576,8 @@ export const albums: AlbumInterface[] = [
         year: 2003,
         spotifyUrl: "6FikZepfzH2DsjVdeVcgu5",
         tags: [
-            Tag.II,
-            Tag.Auto,
+            Tag.Year2011To2014,
+            Tag.Mazda,
             Tag.OriginSoulseek
         ],
     },
@@ -584,7 +587,7 @@ export const albums: AlbumInterface[] = [
         year: 2011,
         spotifyUrl: "52SGVryzCN8m2dLWNVcH9l",
         tags: [
-            Tag.II,
+            Tag.Year2011To2014,
             Tag.OriginSoulseek
         ],
     },
@@ -594,7 +597,7 @@ export const albums: AlbumInterface[] = [
         year: 2018,
         spotifyUrl: "4AAPRl8BKlsIVC5aeedlBv",
         tags: [
-            Tag.Spotify,
+            Tag.Year2020To2023,
             Tag.OriginSoulseek
         ],
     },
@@ -604,17 +607,17 @@ export const albums: AlbumInterface[] = [
         year: 2002,
         spotifyUrl: "4FFDudC4xBVF6MYJUynRsN",
         tags: [
-            Tag.I,
+            Tag.Year2008To2011,
             Tag.OriginSoulseek
         ],
     },
     {
         artist: "Evergrey",
-        title: "A Heartless Portrait (The OrphÄ‚Â©an Testament)",
+        title: "A Heartless Portrait (The Orphean Testament)",
         year: 2022,
         spotifyUrl: "7ks1taIwddDv4bjFrujxn2",
         tags: [
-            Tag.Spotify,
+            Tag.Year2025Now,
             Tag.OriginSoulseek,
             Tag.X
         ],
@@ -635,7 +638,7 @@ export const albums: AlbumInterface[] = [
         year: 1992,
         spotifyUrl: "7k1YOwYf369EX0aHeXApWp",
         tags: [
-            Tag.II,
+            Tag.Year2011To2014,
             Tag.Cd,
             Tag.OriginCdrip
         ],
@@ -647,7 +650,7 @@ export const albums: AlbumInterface[] = [
         spotifyUrl: "27WeSriNUz7qD50tdoZClP",
         tags: [
             Tag.Olx,
-            Tag.II,
+            Tag.Year2011To2014,
             Tag.OlxVinyl,
             Tag.OriginCdrip
         ],
@@ -668,7 +671,7 @@ export const albums: AlbumInterface[] = [
         year: 2012,
         spotifyUrl: "4P9SBtY51x7tHB0q4YbAQT",
         tags: [
-            Tag.II,
+            Tag.Year2011To2014,
             Tag.OriginRapidgator
         ],
     },
@@ -678,7 +681,7 @@ export const albums: AlbumInterface[] = [
         year: 2016,
         spotifyUrl: "5KRTSW8M5GxnznK3fr781W",
         tags: [
-            Tag.Spotify,
+            Tag.Year2020To2023,
             Tag.OriginSoulseek
         ],
     },
@@ -688,7 +691,7 @@ export const albums: AlbumInterface[] = [
         year: 2010,
         spotifyUrl: "1kFN0IOnTnmfawj7xrOzKe",
         tags: [
-            Tag.III,
+            Tag.Year2014To2017,
             Tag.OriginSoulseek
         ],
     },
@@ -698,8 +701,8 @@ export const albums: AlbumInterface[] = [
         year: 2011,
         spotifyUrl: "4h3UUonQ3Rpo62t7OmEcsd",
         tags: [
-            Tag.Spotify,
-            Tag.Auto,
+            Tag.Year2020To2023,
+            Tag.Mazda,
             Tag.OriginFlacMusicFinder
         ],
     },
@@ -709,8 +712,8 @@ export const albums: AlbumInterface[] = [
         year: 2001,
         spotifyUrl: "3mSUlhyG7X3ZCekkIi0TiI",
         tags: [
-            Tag.Spotify,
-            Tag.Auto,
+            Tag.Year2023To2025,
+            Tag.Mazda,
             Tag.OriginFlacMusicFinder
         ],
     },
@@ -720,17 +723,17 @@ export const albums: AlbumInterface[] = [
         year: 1995,
         spotifyUrl: "_illusion 3",
         tags: [
-            Tag.III,
+            Tag.Year2014To2017,
             Tag.Mp3
         ],
     },
     {
         artist: "Mama Selita",
-        title: "MaterialiĹ›ci",
+        title: "Materialiści",
         year: 2014,
         spotifyUrl: "3erR3n70KrH8UX6R3kHzro",
         tags: [
-            Tag.Spotify,
+            Tag.Year2023To2025,
             Tag.Cd,
             Tag.OlxIn,
             Tag.OriginCdrip
@@ -753,17 +756,17 @@ export const albums: AlbumInterface[] = [
         year: 2017,
         spotifyUrl: "2QEGCBGVqN0WvX2wHeuwMP",
         tags: [
-            Tag.Spotify,
+            Tag.Year2020To2023,
             Tag.OriginSoulseek
         ],
     },
     {
         artist: "Illusion",
-        title: "OpowieĹ›ci",
+        title: "Opowieści",
         year: 2014,
         spotifyUrl: "7KAoDONaqvs7by4oI1vySY",
         tags: [
-            Tag.III,
+            Tag.Year2014To2017,
             Tag.Mp3
         ],
     },
@@ -773,7 +776,7 @@ export const albums: AlbumInterface[] = [
         year: 2009,
         spotifyUrl: "6aA7B8RGZOCmQDpKhWPJ3U",
         tags: [
-            Tag.III,
+            Tag.Year2014To2017,
             Tag.OriginFlacMusicFinder
         ],
     },
@@ -806,7 +809,7 @@ export const albums: AlbumInterface[] = [
         year: 2009,
         spotifyUrl: "2vkLky2qG0rziUk0eOsIZ9",
         tags: [
-            Tag.II,
+            Tag.Year2011To2014,
             Tag.OriginSoulseek
         ],
     },
@@ -816,8 +819,8 @@ export const albums: AlbumInterface[] = [
         year: 1999,
         spotifyUrl: "0fLhefnjlIV3pGNF9Wo8CD",
         tags: [
-            Tag.I,
-            Tag.Auto,
+            Tag.Year2008To2011,
+            Tag.Mazda,
             Tag.OriginSoulseek
         ],
     },
@@ -827,7 +830,7 @@ export const albums: AlbumInterface[] = [
         year: 2022,
         spotifyUrl: "6c5mEBiGZdHm0lnzvlbXVW",
         tags: [
-            Tag.Spotify,
+            Tag.Year2020To2023,
             Tag.OriginSoulseek
         ],
     },
@@ -837,7 +840,7 @@ export const albums: AlbumInterface[] = [
         year: 2021,
         spotifyUrl: "5mIbeOd1gcpiIq08SQ3rxH",
         tags: [
-            Tag.Spotify,
+            Tag.Year2020To2023,
             Tag.OriginRapidgator
         ],
     },
@@ -867,7 +870,7 @@ export const albums: AlbumInterface[] = [
         year: 2006,
         spotifyUrl: "5qLvOn0QzAWOqonBc05Ord",
         tags: [
-            Tag.I,
+            Tag.Year2008To2011,
             Tag.OriginSoulseek
         ],
     },
@@ -877,7 +880,7 @@ export const albums: AlbumInterface[] = [
         year: 2006,
         spotifyUrl: "1fvWYcbjuycyHpzNPH1Vfk",
         tags: [
-            Tag.II,
+            Tag.Year2011To2014,
             Tag.OriginSoulseek
         ],
     },
@@ -887,18 +890,18 @@ export const albums: AlbumInterface[] = [
         year: 1995,
         spotifyUrl: "7CJ59CBDycdjun1rBbSKlK",
         tags: [
-            Tag.II,
+            Tag.Year2011To2014,
             Tag.OriginSoulseek
         ],
     },
     {
         artist: "Coma",
-        title: "Pierwsze WyjĹ›cie z Mroku",
+        title: "Pierwsze Wyjście z Mroku",
         year: 2004,
         spotifyUrl: "1T92zoilK8o5NP5GD6C7WX",
         tags: [
             Tag.Biedronka,
-            Tag.I,
+            Tag.Year2008To2011,
             Tag.OlxOut,
             Tag.OriginCdrip
         ],
@@ -909,7 +912,7 @@ export const albums: AlbumInterface[] = [
         year: 2013,
         spotifyUrl: "1NeunhIyCq0jkezLbOyKDM",
         tags: [
-            Tag.II,
+            Tag.Year2011To2014,
             Tag.OriginSoulseek
         ],
     },
@@ -952,7 +955,7 @@ export const albums: AlbumInterface[] = [
         tags: [
             Tag.Cd,
             Tag.Biedronka,
-            Tag.Auto,
+            Tag.Mazda,
             Tag.OriginCdrip
         ],
     },
@@ -982,7 +985,7 @@ export const albums: AlbumInterface[] = [
         year: 2005,
         spotifyUrl: "4dN3wsrnPehrnka1P8Ydaj",
         tags: [
-            Tag.Spotify,
+            Tag.Year2020To2023,
             Tag.OriginSoulseek
         ],
     },
@@ -992,8 +995,8 @@ export const albums: AlbumInterface[] = [
         year: 1999,
         spotifyUrl: "0NgdZp0Z9HGsowYxPBYQSV",
         tags: [
-            Tag.Spotify,
-            Tag.Auto,
+            Tag.Year2020To2023,
+            Tag.Mazda,
             Tag.OriginRapidgator
         ],
     },
@@ -1025,7 +1028,7 @@ export const albums: AlbumInterface[] = [
         spotifyUrl: "4IOSxtmBjo4eJXwNH4uiOQ",
         coverExtension: "JPG",
         tags: [
-            Tag.Spotify,
+            Tag.Year2020To2023,
             Tag.NoFlac
         ],
     },
@@ -1035,9 +1038,9 @@ export const albums: AlbumInterface[] = [
         year: 1995,
         spotifyUrl: "74cQBDmkkzRBntR064f0SD",
         tags: [
-            Tag.I,
+            Tag.Year2008To2011,
             Tag.Cd,
-            Tag.Auto,
+            Tag.Mazda,
             Tag.MediaMarkt,
             Tag.OriginCdrip
         ],
@@ -1069,7 +1072,7 @@ export const albums: AlbumInterface[] = [
         year: 2000,
         spotifyUrl: "0SgpRABU0OXvl2PjdIWhYX",
         tags: [
-            Tag.I,
+            Tag.Year2008To2011,
             Tag.OriginSoulseek
         ],
     },
@@ -1079,7 +1082,7 @@ export const albums: AlbumInterface[] = [
         year: 1989,
         spotifyUrl: "6LEP3L94jnkqjOxYJWPRP0",
         tags: [
-            Tag.II,
+            Tag.Year2011To2014,
             Tag.OriginSoulseek
         ],
     },
@@ -1089,7 +1092,7 @@ export const albums: AlbumInterface[] = [
         year: 2018,
         spotifyUrl: "0ZooQ6tlQjugMQ80vetoo4",
         tags: [
-            Tag.Spotify,
+            Tag.Year2020To2023,
             Tag.NoFlac
         ],
     },
@@ -1099,7 +1102,7 @@ export const albums: AlbumInterface[] = [
         year: 2006,
         spotifyUrl: "6XEXC2Hq7zrdGNHZaPCcDv",
         tags: [
-            Tag.Spotify,
+            Tag.Year2023To2025,
             Tag.OriginSoulseek
         ],
     },
@@ -1109,7 +1112,7 @@ export const albums: AlbumInterface[] = [
         year: 2001,
         spotifyUrl: "5fKL7vMTXvhR9tov8Kqt3u",
         tags: [
-            Tag.Spotify,
+            Tag.Year2020To2023,
             Tag.OriginSoulseek
         ],
     },
@@ -1119,8 +1122,8 @@ export const albums: AlbumInterface[] = [
         year: 2014,
         spotifyUrl: "76fT51C9WtCgCcRJlt3PnG",
         tags: [
-            Tag.Spotify,
-            Tag.Auto,
+            Tag.Year2020To2023,
+            Tag.Mazda,
             Tag.OriginSoulseek
         ],
     },
@@ -1130,7 +1133,7 @@ export const albums: AlbumInterface[] = [
         year: 2013,
         spotifyUrl: "0ks45m1bsP2JsZpM5D2FFA",
         tags: [
-            Tag.Spotify,
+            Tag.Year2020To2023,
             Tag.OriginSoulseek,
             Tag.X
         ],
@@ -1152,7 +1155,7 @@ export const albums: AlbumInterface[] = [
         year: 2016,
         spotifyUrl: "1FSVYIieMIpJCWjucTjrao",
         tags: [
-            Tag.Spotify,
+            Tag.Year2020To2023,
             Tag.OriginSoulseek
         ],
     },
@@ -1162,7 +1165,7 @@ export const albums: AlbumInterface[] = [
         year: 2013,
         spotifyUrl: "78bpIziExqiI9qztvNFlQu",
         tags: [
-            Tag.Spotify,
+            Tag.Year2025Now,
             Tag.TwentyFourBit441Khz,
             Tag.OriginFlacMusicFinder
         ],
@@ -1173,7 +1176,7 @@ export const albums: AlbumInterface[] = [
         year: 2020,
         spotifyUrl: "7MfryRchXoNRwG5YbbDL1S",
         tags: [
-            Tag.Spotify,
+            Tag.Year2020To2023,
             Tag.OriginSoulseek
         ],
     },
@@ -1183,7 +1186,7 @@ export const albums: AlbumInterface[] = [
         year: 2004,
         spotifyUrl: "0aDCpYtFdQ0S8C3oAtOonk",
         tags: [
-            Tag.I,
+            Tag.Year2008To2011,
             Tag.OriginSoulseek
         ],
     },
@@ -1193,7 +1196,7 @@ export const albums: AlbumInterface[] = [
         year: 2017,
         spotifyUrl: "01JmOnNGgaxannxcQUxaey",
         tags: [
-            Tag.Spotify,
+            Tag.Year2020To2023,
             Tag.OriginRapidgator
         ],
     },
@@ -1203,7 +1206,7 @@ export const albums: AlbumInterface[] = [
         year: 2009,
         spotifyUrl: "6KqL8MggBekUxqa1GYuVyY",
         tags: [
-            Tag.II,
+            Tag.Year2011To2014,
             Tag.OriginSoulseek
         ],
     },
@@ -1213,8 +1216,8 @@ export const albums: AlbumInterface[] = [
         year: 2011,
         spotifyUrl: "5cF5m1f2MPh099b7kh6mqh",
         tags: [
-            Tag.Spotify,
-            Tag.Auto,
+            Tag.Year2020To2023,
+            Tag.Mazda,
             Tag.NoFlac
         ],
     },
@@ -1224,7 +1227,7 @@ export const albums: AlbumInterface[] = [
         year: 2015,
         spotifyUrl: "1JgiHuKdZNP2Z6XOJtBjyz",
         tags: [
-            Tag.Spotify,
+            Tag.Year2014To2017,
             Tag.TwentyFourBit441Khz,
             Tag.OriginSoulseek
         ],
@@ -1235,7 +1238,7 @@ export const albums: AlbumInterface[] = [
         year: 2001,
         spotifyUrl: "5l5m1hnH4punS1GQXgEi3T",
         tags: [
-            Tag.II,
+            Tag.Year2011To2014,
             Tag.OriginSoulseek
         ],
     },
@@ -1280,8 +1283,8 @@ export const albums: AlbumInterface[] = [
         spotifyUrl: "09qHS2BgOLqi3SMkbauxdJ",
         tags: [
             Tag.Discman,
-            Tag.I,
-            Tag.Auto,
+            Tag.Year2008To2011,
+            Tag.Mazda,
             Tag.OriginSoulseek
         ],
     },
@@ -1303,7 +1306,7 @@ export const albums: AlbumInterface[] = [
         tags: [
             Tag.Cd,
             Tag.Biedronka,
-            Tag.Auto,
+            Tag.Mazda,
             Tag.OriginCdrip
         ],
     },
@@ -1313,7 +1316,7 @@ export const albums: AlbumInterface[] = [
         year: 2003,
         spotifyUrl: "0CA2EVHhRPR5VPV78KZw89",
         tags: [
-            Tag.II,
+            Tag.Year2011To2014,
             Tag.Cd,
             Tag.OriginCdrip
         ],
@@ -1326,7 +1329,7 @@ export const albums: AlbumInterface[] = [
         tags: [
             Tag.Cd,
             Tag.MediaMarkt,
-            Tag.II,
+            Tag.Year2011To2014,
             Tag.OriginCdrip
         ],
     },
@@ -1336,7 +1339,7 @@ export const albums: AlbumInterface[] = [
         year: 2011,
         spotifyUrl: "2gMWwDIxxGIiblnv1pQHyd",
         tags: [
-            Tag.Spotify,
+            Tag.Year2020To2023,
             Tag.OriginSoulseek
         ],
     },
@@ -1378,7 +1381,7 @@ export const albums: AlbumInterface[] = [
         spotifyUrl: "1DCI2yWmV4UI7Aga71yx9B",
         tags: [
             Tag.Cd,
-            Tag.II,
+            Tag.Year2011To2014,
             Tag.OriginCdrip
         ],
     },
@@ -1388,7 +1391,7 @@ export const albums: AlbumInterface[] = [
         year: 2015,
         spotifyUrl: "4HAjhTdm5gC7CnNmFkcssa",
         tags: [
-            Tag.Spotify,
+            Tag.Year2020To2023,
             Tag.OriginSoulseek
         ],
     },
@@ -1398,7 +1401,7 @@ export const albums: AlbumInterface[] = [
         year: 2000,
         spotifyUrl: "7kCSKMU38mwFl65RCCGBs8",
         tags: [
-            Tag.III,
+            Tag.Year2014To2017,
             Tag.Mp3
         ],
     },
@@ -1448,7 +1451,8 @@ export const albums: AlbumInterface[] = [
         spotifyUrl: "4G14ImdbfLm9adBZfNuMjg",
         tags: [
             Tag.OriginRapidgator,
-            Tag.X
+            Tag.X,
+            Tag.Year2023To2025
         ],
     },
     {
@@ -1489,6 +1493,7 @@ export const albums: AlbumInterface[] = [
         spotifyUrl: "1b6IlVlHRzbkcAWIpXaW37",
         tags: [
             Tag.OriginSoulseek,
+            Tag.Year2020To2023
         ],
     },
     {
@@ -1498,6 +1503,7 @@ export const albums: AlbumInterface[] = [
         spotifyUrl: "7KF1Ain9mYYlg5M46g0i4A",
         tags: [
             Tag.OriginRapidgator,
+            Tag.Year2025Now
         ],
     },
     {
@@ -1507,7 +1513,8 @@ export const albums: AlbumInterface[] = [
         spotifyUrl: "6Vchu5Bbi4C0nUNSprj6lD",
         tags: [
             Tag.OriginSoulseek,
-            Tag.TwentyFourBit441Khz
+            Tag.TwentyFourBit441Khz,
+            Tag.Year2025Now
         ],
     },
     {
@@ -1517,7 +1524,7 @@ export const albums: AlbumInterface[] = [
         spotifyUrl: "5pCBuV5mhXIUonyuWL5EZd",
         tags: [
             Tag.OriginRapidgator,
-            Tag.Spotify
+            Tag.Year2025Now
         ],
     },
     {
@@ -1527,6 +1534,7 @@ export const albums: AlbumInterface[] = [
         spotifyUrl: "0YRIP2ccK2v8kWW7SdDA7R",
         tags: [
             Tag.OriginSoulseek,
+            Tag.Year2025Now
         ],
     },
     {
@@ -1536,7 +1544,8 @@ export const albums: AlbumInterface[] = [
         spotifyUrl: "2ZTDmH94OLjeNaOvT7Ngwk",
         tags: [
             Tag.OriginRapidgator,
-            Tag.X
+            Tag.X,
+            Tag.Year2025Now
         ],
     },
     {
@@ -1573,7 +1582,8 @@ export const albums: AlbumInterface[] = [
         spotifyUrl: "3FqqIeynZXFBcyLS9FlWMo",
         tags: [
             Tag.OriginFlacMusicFinder,
-            Tag.TwentyFourBit48Khz
+            Tag.TwentyFourBit48Khz,
+            Tag.Year2025Now
         ],
     }
 ]

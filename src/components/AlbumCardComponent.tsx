@@ -12,6 +12,17 @@ export const AlbumCardComponent: FC<AlbumComponentInterface> = (props): JSX.Elem
 
   const desc = `${artist} - ${title} (${year})`;
   const coverSize: number = 300;
+  const cover = (
+    <img
+      alt={desc}
+      className="shadow"
+      height={coverSize}
+      src={`covers/${spotifyUrl}.${coverExtension}`}
+      title={desc}
+      width={coverSize}
+    />
+  );
+  const isSpotifyAlbum = !spotifyUrl.startsWith("_");
   const searchFor = (value: string): void => {
     if (selectedTags.length > 0) setSelectedTags([]);
     setQuery(value);
@@ -22,20 +33,17 @@ export const AlbumCardComponent: FC<AlbumComponentInterface> = (props): JSX.Elem
       <Modal.Header closeButton />
       <Modal.Body>
         <section className="d-flex justify-content-center mb-3">
-          <a
-            href={`https://open.spotify.com/album/${spotifyUrl}`}
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            <img
-              alt={desc}
-              className="shadow"
-              height={coverSize}
-              src={`covers/${spotifyUrl}.${coverExtension}`}
-              title={desc}
-              width={coverSize}
-            />
-          </a>
+          {isSpotifyAlbum ? (
+            <a
+              href={`https://open.spotify.com/album/${spotifyUrl}`}
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              {cover}
+            </a>
+          ) : (
+            cover
+          )}
         </section>
         <section>
           <h3 className="text-center">{title}</h3>
