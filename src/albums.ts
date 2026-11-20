@@ -1543,6 +1543,7 @@ export const albums: AlbumInterface[] = [
     }
 ]
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const legacy: AlbumInterface[] = [
     {
         artist: "Avenged Sevenfold",
