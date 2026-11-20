@@ -1130,17 +1130,6 @@ export const albums: AlbumInterface[] = [
         ],
     },
     {
-        artist: "Avenged Sevenfold",
-        title: "Hail To The King",
-        year: 2013,
-        spotifyUrl: "0ks45m1bsP2JsZpM5D2FFA",
-        tags: [
-            Tag.Year2021To2023,
-            Tag.SourceSoulseek,
-            Tag.X
-        ],
-    },
-    {
         artist: "Rage Against The Machine",
         title: "Live At The Grand Olympic Auditorium",
         year: 2003,
@@ -1555,6 +1544,17 @@ export const albums: AlbumInterface[] = [
 ]
 
 const legacy: AlbumInterface[] = [
+    {
+        artist: "Avenged Sevenfold",
+        title: "Hail To The King",
+        year: 2013,
+        spotifyUrl: "0ks45m1bsP2JsZpM5D2FFA",
+        tags: [
+            Tag.Year2021To2023,
+            Tag.SourceSoulseek,
+            Tag.X
+        ],
+    },
     {
         artist: "Don Broco",
         title: "Live At Royal Albert Hall",
