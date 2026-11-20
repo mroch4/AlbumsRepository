@@ -30,6 +30,7 @@ export enum Tag {
   SourceSoulseek = "o:soulseek",
 
   // Years
+  YearUnknown = "no year",
   Year2003To2008 = "2003-2008", // discman era
   Year2008To2011 = "2008-2011", // fujitsu era
   Year2011To2014 = "2011-2014", // collage, 1st degree

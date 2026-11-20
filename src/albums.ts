@@ -123,6 +123,7 @@ export const albums: AlbumInterface[] = [
         year: 1993,
         spotifyUrl: "4PCVbeHbMHCyZS7Oxl4L31",
         tags: [
+            Tag.Year2003To2008,
             Tag.Cd,
             Tag.OriginMediaMarkt,
             Tag.SourceCdrip
@@ -164,6 +165,7 @@ export const albums: AlbumInterface[] = [
         year: 1992,
         spotifyUrl: "59GwovfBk0Kp2HJw1G7E5Q",
         tags: [
+            Tag.Year2011To2014,
             Tag.Cd,
             Tag.SourceCdrip
         ],
@@ -194,6 +196,7 @@ export const albums: AlbumInterface[] = [
         year: 2015,
         spotifyUrl: "4XC0gFgH9EqXlh6IcdXOZw",
         tags: [
+            Tag.Year2014To2017,
             Tag.Cd,
             Tag.OlxIn,
             Tag.Mazda,
@@ -216,6 +219,7 @@ export const albums: AlbumInterface[] = [
         year: 2003,
         spotifyUrl: "7ngolhYq4Cn2ufiv6pCrzD",
         tags: [
+            Tag.YearUnknown,
             Tag.OlxOut,
             Tag.SourceCdrip
         ],
@@ -269,6 +273,7 @@ export const albums: AlbumInterface[] = [
         year: 1994,
         spotifyUrl: "5PwszPyt6lftGQHIB9VwZ8",
         tags: [
+            Tag.Year2011To2014,
             Tag.Cd,
             Tag.SourceCdrip
         ],
@@ -338,6 +343,7 @@ export const albums: AlbumInterface[] = [
         year: 1990,
         spotifyUrl: "5LbHbwejgZXRZAgzVAjkhj",
         tags: [
+            Tag.Year2011To2014,
             Tag.Cd,
             Tag.OriginMediaMarkt,
             Tag.SourceCdrip
@@ -349,6 +355,7 @@ export const albums: AlbumInterface[] = [
         year: 1991,
         spotifyUrl: "6AA5g730FNzwKI08H7rxBk",
         tags: [
+            Tag.YearUnknown,
             Tag.OlxVinyl,
             Tag.SourceCdrip
         ],
@@ -366,7 +373,7 @@ export const albums: AlbumInterface[] = [
     },
     {
         artist: "KSU",
-        title: "XXX lecie - Akustycznie",
+        title: "Akustycznie",
         year: 2008,
         spotifyUrl: "6tgIXjV7flQReoAB2Hfe2z",
         tags: [
@@ -568,6 +575,7 @@ export const albums: AlbumInterface[] = [
         year: 2009,
         spotifyUrl: "63XTF7poLIFIP9YA8XVnET",
         tags: [
+            Tag.YearUnknown,
             Tag.OlxOut,
             Tag.SourceCdrip
         ],
@@ -747,6 +755,7 @@ export const albums: AlbumInterface[] = [
         year: 1992,
         spotifyUrl: "58NXIEYqmq5dQHg9nV9duM",
         tags: [
+            Tag.Year2011To2014,
             Tag.Cd,
             Tag.OriginMediaMarkt,
             Tag.SourceCdrip
@@ -788,6 +797,7 @@ export const albums: AlbumInterface[] = [
         year: 2018,
         spotifyUrl: "0R3iUk31drnPKGCdb35Cbw",
         tags: [
+            Tag.Year2017To2020,
             Tag.Cd,
             Tag.OlxIn,
             Tag.SourceCdrip
@@ -862,6 +872,7 @@ export const albums: AlbumInterface[] = [
         year: 1989,
         spotifyUrl: "4Q1HXCFg84PfQRZlPCA4SH",
         tags: [
+            Tag.YearUnknown,
             Tag.OlxVinyl,
             Tag.SourceSoulseek
         ],
@@ -924,6 +935,7 @@ export const albums: AlbumInterface[] = [
         year: 2015,
         spotifyUrl: "2btszoya78vyT8fwelmVnz",
         tags: [
+            Tag.Year2017To2020,
             Tag.Cd,
             Tag.OriginBiedronka,
             Tag.SourceCdrip
@@ -935,6 +947,7 @@ export const albums: AlbumInterface[] = [
         year: 1997,
         spotifyUrl: "15eiCGvldXlDbIz9ZQLmw6",
         tags: [
+            Tag.Year2014To2017,
             Tag.Cd,
             Tag.SourceCdrip
         ],
@@ -945,6 +958,7 @@ export const albums: AlbumInterface[] = [
         year: 1996,
         spotifyUrl: "0FW74bZJNDROqvqtjerCGh",
         tags: [
+            Tag.YearUnknown,
             Tag.OlxOut,
             Tag.SourceCdrip
         ],
@@ -955,6 +969,7 @@ export const albums: AlbumInterface[] = [
         year: 1996,
         spotifyUrl: "1IVa98im1RfxYp6qeOIg2B",
         tags: [
+            Tag.Year2017To2020,
             Tag.Cd,
             Tag.OriginBiedronka,
             Tag.Mazda,
@@ -967,6 +982,7 @@ export const albums: AlbumInterface[] = [
         year: 2006,
         spotifyUrl: "5OISte8J6DV61Vad0W0Cv9",
         tags: [
+            Tag.YearUnknown,
             Tag.OlxOut,
             Tag.SourceCdrip
         ],
@@ -1018,6 +1034,7 @@ export const albums: AlbumInterface[] = [
         year: 1991,
         spotifyUrl: "5B4PYA7wNN4WdEXdIJu58a",
         tags: [
+            Tag.Year2011To2014,
             Tag.Cd,
             Tag.OriginMediaMarkt,
             Tag.SourceCdrip
@@ -1053,6 +1070,7 @@ export const albums: AlbumInterface[] = [
         year: 1985,
         spotifyUrl: "10Oqhoq2akSJnurJOPk8xT",
         tags: [
+            Tag.YearUnknown,
             Tag.OlxOut,
             Tag.SourceCdrip
         ],
@@ -1063,6 +1081,7 @@ export const albums: AlbumInterface[] = [
         year: 1972,
         spotifyUrl: "4Ju17mkQ4MUnQWBg9auMvk",
         tags: [
+            Tag.YearUnknown,
             Tag.Cd,
             Tag.OriginPresent,
             Tag.SourceCdrip
@@ -1135,6 +1154,7 @@ export const albums: AlbumInterface[] = [
         year: 2003,
         spotifyUrl: "5tQjJRsqTVaK9NZ7Rh02en",
         tags: [
+            Tag.YearUnknown,
             Tag.OriginMediaMarkt,
             Tag.OlxOut,
             Tag.SourceCdrip
@@ -1251,6 +1271,7 @@ export const albums: AlbumInterface[] = [
         year: 2010,
         spotifyUrl: "1IvD11R4ZGTm4rSveWc2Xg",
         tags: [
+            Tag.Year2011To2014,
             Tag.Cd,
             Tag.OriginPresent,
             Tag.SourceCdrip
@@ -1286,6 +1307,7 @@ export const albums: AlbumInterface[] = [
         year: 1994,
         spotifyUrl: "1xHWwGSoF1DNE4hqgBRkJX",
         tags: [
+            Tag.Year2011To2014,
             Tag.OlxOut,
             Tag.SourceCdrip
         ],
@@ -1296,6 +1318,7 @@ export const albums: AlbumInterface[] = [
         year: 2012,
         spotifyUrl: "65XXZG2pFzK99xeOuVLHP2",
         tags: [
+            Tag.Year2017To2020,
             Tag.Cd,
             Tag.OriginBiedronka,
             Tag.Mazda,
@@ -1351,6 +1374,7 @@ export const albums: AlbumInterface[] = [
         year: 2005,
         spotifyUrl: "30iqYID1JMBXLVFfErwTSd",
         tags: [
+            Tag.YearUnknown,
             Tag.Olx,
             Tag.SourceCdrip
         ],
@@ -1361,6 +1385,7 @@ export const albums: AlbumInterface[] = [
         year: 1994,
         spotifyUrl: "4FCoFSNIFhK36holxHWCnc",
         tags: [
+            Tag.Year2011To2014,
             Tag.Cd,
             Tag.OriginMediaMarkt,
             Tag.SourceCdrip
@@ -1403,6 +1428,7 @@ export const albums: AlbumInterface[] = [
         year: 1987,
         spotifyUrl: "0kBy2KA6BuCWveFo88VmMX",
         tags: [
+            Tag.YearUnknown,
             Tag.Olx,
             Tag.SourceCdrip
         ],
@@ -1444,6 +1470,7 @@ export const albums: AlbumInterface[] = [
         year: 2000,
         spotifyUrl: "6hPkbAV3ZXpGZBGUvL6jVM",
         tags: [
+            Tag.YearUnknown,
             Tag.SourceSoulseek,
             Tag.TwentyFourBit96Khz,
             Tag.X
@@ -1562,6 +1589,7 @@ const legacy: AlbumInterface[] = [
         year: 2023,
         spotifyUrl: "5o1l7G0Dr8GGzUaFnTuhNE",
         tags: [
+            Tag.YearUnknown,
             Tag.SourceRapidgator,
             Tag.X
         ],
@@ -1594,6 +1622,7 @@ const legacy: AlbumInterface[] = [
         year: 1996,
         spotifyUrl: "2JJEIN6LvQJQTJDfnYdDAe",
         tags: [
+            Tag.YearUnknown,
             Tag.SourceRapidgator,
             Tag.X
         ],
@@ -1604,6 +1633,7 @@ const legacy: AlbumInterface[] = [
         year: 2018,
         spotifyUrl: "1C4NZ4GnwIRNY0glvRpOon",
         tags: [
+            Tag.YearUnknown,
             Tag.SourceRapidgator,
             Tag.X
         ],
@@ -1614,6 +1644,7 @@ const legacy: AlbumInterface[] = [
         year: 2020,
         spotifyUrl: "27evZfDFySSv4dcje8afMI",
         tags: [
+            Tag.YearUnknown,
             Tag.SourceFlacMusicFinder,
             Tag.X
         ],
