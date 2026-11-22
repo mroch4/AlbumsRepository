@@ -1,6 +1,7 @@
 export enum Tag {
   X = "x",
   Cd = "cd",
+  Legacy = "legacy",
   Mazda = "mazda",
   Pirat = "pirat",
 

@@ -213,17 +213,7 @@ export const albums: AlbumInterface[] = [
             Tag.SourceFlacMusicFinder
         ],
     },
-    {
-        artist: "Proletaryat",
-        title: "ReC",
-        year: 2003,
-        spotifyUrl: "7ngolhYq4Cn2ufiv6pCrzD",
-        tags: [
-            Tag.YearUnknown,
-            Tag.OlxOut,
-            Tag.SourceCdrip
-        ],
-    },
+
     {
         artist: "I Am Giant",
         title: "Life In Captivity",
@@ -621,17 +611,7 @@ export const albums: AlbumInterface[] = [
             Tag.SourceSoulseek
         ],
     },
-    {
-        artist: "Evergrey",
-        title: "A Heartless Portrait (The Orphean Testament)",
-        year: 2022,
-        spotifyUrl: "7ks1taIwddDv4bjFrujxn2",
-        tags: [
-            Tag.Year2025Now,
-            Tag.SourceSoulseek,
-            Tag.X
-        ],
-    },
+
     {
         artist: "Pink Floyd",
         title: "Delicate Sound Of Thunder",
@@ -866,17 +846,7 @@ export const albums: AlbumInterface[] = [
             Tag.SourceSoulseek
         ],
     },
-    {
-        artist: "Soundgarden",
-        title: "Louder Than Love",
-        year: 1989,
-        spotifyUrl: "4Q1HXCFg84PfQRZlPCA4SH",
-        tags: [
-            Tag.YearUnknown,
-            Tag.OlxVinyl,
-            Tag.SourceSoulseek
-        ],
-    },
+
     {
         artist: "Iron Maiden",
         title: "A Matter Of Life And Death",
@@ -952,17 +922,7 @@ export const albums: AlbumInterface[] = [
             Tag.SourceCdrip
         ],
     },
-    {
-        artist: "Proletaryat",
-        title: "Zuum",
-        year: 1996,
-        spotifyUrl: "0FW74bZJNDROqvqtjerCGh",
-        tags: [
-            Tag.YearUnknown,
-            Tag.OlxOut,
-            Tag.SourceCdrip
-        ],
-    },
+
     {
         artist: "Soundgarden",
         title: "Down On The Upside",
@@ -1040,17 +1000,7 @@ export const albums: AlbumInterface[] = [
             Tag.SourceCdrip
         ],
     },
-    {
-        artist: "Proletaryat",
-        title: "Oko za Oko",
-        year: 2015,
-        spotifyUrl: "4IOSxtmBjo4eJXwNH4uiOQ",
-        coverExtension: "JPG",
-        tags: [
-            Tag.Year2021To2023,
-            Tag.NoFlac
-        ],
-    },
+
     {
         artist: "Red Hot Chili Peppers",
         title: "One Hot Minute",
@@ -1108,16 +1058,6 @@ export const albums: AlbumInterface[] = [
         ],
     },
     {
-        artist: "Illusion",
-        title: "Anhedonia",
-        year: 2018,
-        spotifyUrl: "0ZooQ6tlQjugMQ80vetoo4",
-        tags: [
-            Tag.Year2021To2023,
-            Tag.NoFlac
-        ],
-    },
-    {
         artist: "Evergrey",
         title: "Monday Morning Apocalypse",
         year: 2006,
@@ -1148,18 +1088,7 @@ export const albums: AlbumInterface[] = [
             Tag.SourceSoulseek
         ],
     },
-    {
-        artist: "Rage Against The Machine",
-        title: "Live At The Grand Olympic Auditorium",
-        year: 2003,
-        spotifyUrl: "5tQjJRsqTVaK9NZ7Rh02en",
-        tags: [
-            Tag.YearUnknown,
-            Tag.OriginMediaMarkt,
-            Tag.OlxOut,
-            Tag.SourceCdrip
-        ],
-    },
+
     {
         artist: "Dance Gavin Dance",
         title: "Mothership",
@@ -1444,17 +1373,6 @@ export const albums: AlbumInterface[] = [
         ],
     },
     {
-        artist: "Evergrey",
-        title: "Escape Of The Phoenix",
-        year: 2021,
-        spotifyUrl: "5x7iT8UItd7SdDwf6tQzpb",
-        tags: [
-            Tag.Year2025Now,
-            Tag.SourceRapidgator,
-            Tag.X
-        ],
-    },
-    {
         artist: "John Porter",
         title: "Incarnation",
         year: 1991,
@@ -1464,18 +1382,7 @@ export const albums: AlbumInterface[] = [
             Tag.Year2003To2008
         ],
     },
-    {
-        artist: "Linkin Park",
-        title: "Hybrid Theory",
-        year: 2000,
-        spotifyUrl: "6hPkbAV3ZXpGZBGUvL6jVM",
-        tags: [
-            Tag.YearUnknown,
-            Tag.SourceSoulseek,
-            Tag.TwentyFourBit96Khz,
-            Tag.X
-        ],
-    },
+
     {
         artist: "Linkin Park",
         title: "Minutes To Midnight",
@@ -1496,16 +1403,7 @@ export const albums: AlbumInterface[] = [
             Tag.Year2021To2023
         ],
     },
-    {
-        artist: "Maneskin",
-        title: "Teatro d'ira: Vol. I",
-        year: 2021,
-        spotifyUrl: "7KF1Ain9mYYlg5M46g0i4A",
-        tags: [
-            Tag.SourceRapidgator,
-            Tag.Year2025Now
-        ],
-    },
+
     {
         artist: "Of Mice & Men",
         title: "Another Miracle",
@@ -1567,20 +1465,31 @@ export const albums: AlbumInterface[] = [
             Tag.SourceSoulseek,
             Tag.Year2021To2023
         ],
-    }
-]
+    },
+    //]
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-const legacy: AlbumInterface[] = [
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
+    // const legacy: AlbumInterface[] = [
     {
         artist: "Avenged Sevenfold",
         title: "Hail To The King",
         year: 2013,
         spotifyUrl: "0ks45m1bsP2JsZpM5D2FFA",
         tags: [
-            Tag.Year2021To2023,
-            Tag.SourceSoulseek,
-            Tag.X
+            Tag.Legacy,
+            //Tag.Year2021To2023,
+            //Tag.SourceSoulseek,
+            //Tag.X
+        ],
+    },
+    {
+        artist: "Curcuma",
+        title: "Ona",
+        year: 2020,
+        spotifyUrl: "",
+        tags: [
+            Tag.Legacy,
+            Tag.NoFlac
         ],
     },
     {
@@ -1589,9 +1498,46 @@ const legacy: AlbumInterface[] = [
         year: 2023,
         spotifyUrl: "5o1l7G0Dr8GGzUaFnTuhNE",
         tags: [
-            Tag.YearUnknown,
-            Tag.SourceRapidgator,
-            Tag.X
+            Tag.Legacy,
+            //Tag.YearUnknown,
+            //Tag.SourceRapidgator,
+            //Tag.X
+        ],
+    },
+    {
+        artist: "Evergrey",
+        title: "Escape Of The Phoenix",
+        year: 2021,
+        spotifyUrl: "5x7iT8UItd7SdDwf6tQzpb",
+        tags: [
+            Tag.Legacy,
+            //Tag.Year2025Now,
+            //Tag.SourceRapidgator,
+            //Tag.X
+        ],
+    },
+
+    {
+        artist: "Evergrey",
+        title: "A Heartless Portrait (The Orphean Testament)",
+        year: 2022,
+        spotifyUrl: "7ks1taIwddDv4bjFrujxn2",
+        tags: [
+            Tag.Legacy,
+            //Tag.Year2025Now,
+            //Tag.SourceSoulseek,
+            //Tag.X
+        ],
+    },
+    {
+        artist: "Illusion",
+        title: "Anhedonia",
+        year: 2018,
+        spotifyUrl: "0ZooQ6tlQjugMQ80vetoo4",
+        tags: [
+            Tag.Legacy,
+            //Tag.Year2021To2023,
+            Tag.NoFlac
         ],
     },
     {
@@ -1600,9 +1546,70 @@ const legacy: AlbumInterface[] = [
         year: 2021,
         spotifyUrl: "4G14ImdbfLm9adBZfNuMjg",
         tags: [
-            Tag.SourceRapidgator,
-            Tag.X,
-            Tag.Year2023To2025
+            Tag.Legacy,
+            //Tag.SourceRapidgator,
+            //Tag.X,
+            //Tag.Year2023To2025
+        ],
+    },
+    {
+        artist: "Linkin Park",
+        title: "Hybrid Theory",
+        year: 2000,
+        spotifyUrl: "6hPkbAV3ZXpGZBGUvL6jVM",
+        tags: [
+            Tag.Legacy,
+            //Tag.YearUnknown,
+            //Tag.SourceSoulseek,
+            //Tag.TwentyFourBit96Khz,
+            //Tag.X
+        ],
+    },
+    {
+        artist: "Maneskin",
+        title: "Teatro d'ira: Vol. I",
+        year: 2021,
+        spotifyUrl: "7KF1Ain9mYYlg5M46g0i4A",
+        tags: [
+            Tag.Legacy,
+            //Tag.SourceRapidgator,
+            //Tag.Year2025Now
+        ],
+    },
+    {
+        artist: "Proletaryat",
+        title: "Zuum",
+        year: 1996,
+        spotifyUrl: "0FW74bZJNDROqvqtjerCGh",
+        tags: [
+            Tag.Legacy,
+            //Tag.YearUnknown,
+            //Tag.OlxOut,
+            //Tag.SourceCdrip
+        ],
+    },
+    {
+        artist: "Proletaryat",
+        title: "ReC",
+        year: 2003,
+        spotifyUrl: "7ngolhYq4Cn2ufiv6pCrzD",
+        tags: [
+            Tag.Legacy,
+            //Tag.YearUnknown,
+            //Tag.OlxOut,
+            //Tag.SourceCdrip
+        ],
+    },
+    {
+        artist: "Proletaryat",
+        title: "Oko za Oko",
+        year: 2015,
+        spotifyUrl: "4IOSxtmBjo4eJXwNH4uiOQ",
+        coverExtension: "JPG",
+        tags: [
+            Tag.Legacy,
+            //Tag.Year2021To2023,
+            Tag.NoFlac
         ],
     },
     {
@@ -1611,9 +1618,53 @@ const legacy: AlbumInterface[] = [
         year: 2023,
         spotifyUrl: "2ZTDmH94OLjeNaOvT7Ngwk",
         tags: [
-            Tag.SourceRapidgator,
-            Tag.X,
-            Tag.Year2025Now
+            Tag.Legacy,
+            //Tag.SourceRapidgator,
+            //Tag.X,
+            //Tag.Year2025Now
+        ],
+    },
+    {
+        artist: "Rage Against The Machine",
+        title: "Live At The Grand Olympic Auditorium",
+        year: 2003,
+        spotifyUrl: "5tQjJRsqTVaK9NZ7Rh02en",
+        tags: [
+            Tag.Legacy,
+            //Tag.YearUnknown,
+            //Tag.OriginMediaMarkt,
+            //Tag.OlxOut,
+            //Tag.SourceCdrip
+        ],
+    },
+    {
+        artist: "Rammstein",
+        title: "Rammstein",
+        year: 2019,
+        spotifyUrl: "",
+        tags: [
+            Tag.Legacy,
+            Tag.NoFlac
+        ],
+    },
+    {
+        artist: "Rammstein",
+        title: "Zeit",
+        year: 2022,
+        spotifyUrl: "",
+        tags: [
+            Tag.Legacy,
+            Tag.NoFlac
+        ],
+    },
+    {
+        artist: "Royal Blood",
+        title: "Back To The Water",
+        year: 2022,
+        spotifyUrl: "",
+        tags: [
+            Tag.Legacy,
+            Tag.NoFlac
         ],
     },
     {
@@ -1622,9 +1673,10 @@ const legacy: AlbumInterface[] = [
         year: 1996,
         spotifyUrl: "2JJEIN6LvQJQTJDfnYdDAe",
         tags: [
-            Tag.YearUnknown,
-            Tag.SourceRapidgator,
-            Tag.X
+            Tag.Legacy,
+            //Tag.YearUnknown,
+            //Tag.SourceRapidgator,
+            //Tag.X
         ],
     },
     {
@@ -1633,9 +1685,10 @@ const legacy: AlbumInterface[] = [
         year: 2018,
         spotifyUrl: "1C4NZ4GnwIRNY0glvRpOon",
         tags: [
-            Tag.YearUnknown,
-            Tag.SourceRapidgator,
-            Tag.X
+            Tag.Legacy,
+            //Tag.YearUnknown,
+            //Tag.SourceRapidgator,
+            //Tag.X
         ],
     },
     {
@@ -1644,9 +1697,22 @@ const legacy: AlbumInterface[] = [
         year: 2020,
         spotifyUrl: "27evZfDFySSv4dcje8afMI",
         tags: [
-            Tag.YearUnknown,
-            Tag.SourceFlacMusicFinder,
-            Tag.X
+            Tag.Legacy,
+            //Tag.YearUnknown,
+            //Tag.SourceFlacMusicFinder,
+            //Tag.X
+        ],
+    },
+    {
+        artist: "Soundgarden",
+        title: "Louder Than Love",
+        year: 1989,
+        spotifyUrl: "4Q1HXCFg84PfQRZlPCA4SH",
+        tags: [
+            Tag.Legacy,
+            //Tag.YearUnknown,
+            //Tag.OlxVinyl,
+            //Tag.SourceSoulseek
         ],
     },
 ]
