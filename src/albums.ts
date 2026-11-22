@@ -1486,7 +1486,7 @@ export const albums: AlbumInterface[] = [
         artist: "Curcuma",
         title: "Ona",
         year: 2020,
-        spotifyUrl: "",
+        spotifyUrl: "567",
         tags: [
             Tag.Legacy,
             Tag.NoFlac
@@ -1641,7 +1641,7 @@ export const albums: AlbumInterface[] = [
         artist: "Rammstein",
         title: "Rammstein",
         year: 2019,
-        spotifyUrl: "",
+        spotifyUrl: "456",
         tags: [
             Tag.Legacy,
             Tag.NoFlac
@@ -1651,7 +1651,7 @@ export const albums: AlbumInterface[] = [
         artist: "Rammstein",
         title: "Zeit",
         year: 2022,
-        spotifyUrl: "",
+        spotifyUrl: "234",
         tags: [
             Tag.Legacy,
             Tag.NoFlac
@@ -1661,7 +1661,7 @@ export const albums: AlbumInterface[] = [
         artist: "Royal Blood",
         title: "Back To The Water",
         year: 2022,
-        spotifyUrl: "",
+        spotifyUrl: "123",
         tags: [
             Tag.Legacy,
             Tag.NoFlac
