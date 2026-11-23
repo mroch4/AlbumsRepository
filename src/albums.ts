@@ -1466,10 +1466,6 @@ export const albums: AlbumInterface[] = [
             Tag.Year2021To2023
         ],
     },
-    //]
-
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
-    // const legacy: AlbumInterface[] = [
     {
         artist: "Avenged Sevenfold",
         title: "Hail To The King",
@@ -1477,16 +1473,15 @@ export const albums: AlbumInterface[] = [
         spotifyUrl: "0ks45m1bsP2JsZpM5D2FFA",
         tags: [
             Tag.Legacy,
-            //Tag.Year2021To2023,
-            //Tag.SourceSoulseek,
-            //Tag.X
+            Tag.Year2021To2023,
+            Tag.SourceSoulseek
         ],
     },
     {
         artist: "Curcuma",
         title: "Ona",
         year: 2020,
-        spotifyUrl: "567",
+        spotifyUrl: "30c7OEZCwEJ7f5BfgttPLs",
         tags: [
             Tag.Legacy,
             Tag.NoFlac
@@ -1499,9 +1494,8 @@ export const albums: AlbumInterface[] = [
         spotifyUrl: "5o1l7G0Dr8GGzUaFnTuhNE",
         tags: [
             Tag.Legacy,
-            //Tag.YearUnknown,
-            //Tag.SourceRapidgator,
-            //Tag.X
+            Tag.YearUnknown,
+            Tag.SourceRapidgator
         ],
     },
     {
@@ -1511,9 +1505,8 @@ export const albums: AlbumInterface[] = [
         spotifyUrl: "5x7iT8UItd7SdDwf6tQzpb",
         tags: [
             Tag.Legacy,
-            //Tag.Year2025Now,
-            //Tag.SourceRapidgator,
-            //Tag.X
+            Tag.Year2025Now,
+            Tag.SourceRapidgator
         ],
     },
 
@@ -1524,9 +1517,8 @@ export const albums: AlbumInterface[] = [
         spotifyUrl: "7ks1taIwddDv4bjFrujxn2",
         tags: [
             Tag.Legacy,
-            //Tag.Year2025Now,
-            //Tag.SourceSoulseek,
-            //Tag.X
+            Tag.Year2025Now,
+            Tag.SourceSoulseek
         ],
     },
     {
@@ -1536,7 +1528,7 @@ export const albums: AlbumInterface[] = [
         spotifyUrl: "0ZooQ6tlQjugMQ80vetoo4",
         tags: [
             Tag.Legacy,
-            //Tag.Year2021To2023,
+            Tag.Year2021To2023,
             Tag.NoFlac
         ],
     },
@@ -1547,9 +1539,8 @@ export const albums: AlbumInterface[] = [
         spotifyUrl: "4G14ImdbfLm9adBZfNuMjg",
         tags: [
             Tag.Legacy,
-            //Tag.SourceRapidgator,
-            //Tag.X,
-            //Tag.Year2023To2025
+            Tag.SourceRapidgator,
+            Tag.Year2023To2025
         ],
     },
     {
@@ -1559,10 +1550,9 @@ export const albums: AlbumInterface[] = [
         spotifyUrl: "6hPkbAV3ZXpGZBGUvL6jVM",
         tags: [
             Tag.Legacy,
-            //Tag.YearUnknown,
-            //Tag.SourceSoulseek,
-            //Tag.TwentyFourBit96Khz,
-            //Tag.X
+            Tag.YearUnknown,
+            Tag.SourceSoulseek,
+            Tag.TwentyFourBit96Khz
         ],
     },
     {
@@ -1572,8 +1562,8 @@ export const albums: AlbumInterface[] = [
         spotifyUrl: "7KF1Ain9mYYlg5M46g0i4A",
         tags: [
             Tag.Legacy,
-            //Tag.SourceRapidgator,
-            //Tag.Year2025Now
+            Tag.SourceRapidgator,
+            Tag.Year2025Now
         ],
     },
     {
@@ -1583,9 +1573,9 @@ export const albums: AlbumInterface[] = [
         spotifyUrl: "0FW74bZJNDROqvqtjerCGh",
         tags: [
             Tag.Legacy,
-            //Tag.YearUnknown,
-            //Tag.OlxOut,
-            //Tag.SourceCdrip
+            Tag.YearUnknown,
+            Tag.OlxOut,
+            Tag.SourceCdrip
         ],
     },
     {
@@ -1595,9 +1585,9 @@ export const albums: AlbumInterface[] = [
         spotifyUrl: "7ngolhYq4Cn2ufiv6pCrzD",
         tags: [
             Tag.Legacy,
-            //Tag.YearUnknown,
-            //Tag.OlxOut,
-            //Tag.SourceCdrip
+            Tag.YearUnknown,
+            Tag.OlxOut,
+            Tag.SourceCdrip
         ],
     },
     {
@@ -1608,7 +1598,7 @@ export const albums: AlbumInterface[] = [
         coverExtension: "JPG",
         tags: [
             Tag.Legacy,
-            //Tag.Year2021To2023,
+            Tag.Year2021To2023,
             Tag.NoFlac
         ],
     },
@@ -1619,9 +1609,8 @@ export const albums: AlbumInterface[] = [
         spotifyUrl: "2ZTDmH94OLjeNaOvT7Ngwk",
         tags: [
             Tag.Legacy,
-            //Tag.SourceRapidgator,
-            //Tag.X,
-            //Tag.Year2025Now
+            Tag.SourceRapidgator,
+            Tag.Year2025Now
         ],
     },
     {
@@ -1631,19 +1620,20 @@ export const albums: AlbumInterface[] = [
         spotifyUrl: "5tQjJRsqTVaK9NZ7Rh02en",
         tags: [
             Tag.Legacy,
-            //Tag.YearUnknown,
-            //Tag.OriginMediaMarkt,
-            //Tag.OlxOut,
-            //Tag.SourceCdrip
+            Tag.YearUnknown,
+            Tag.OriginMediaMarkt,
+            Tag.OlxOut,
+            Tag.SourceCdrip
         ],
     },
     {
         artist: "Rammstein",
         title: "Rammstein",
         year: 2019,
-        spotifyUrl: "456",
+        spotifyUrl: "1LoyJQVHPLHE3fCCS8Juek",
         tags: [
             Tag.Legacy,
+            Tag.Year2017To2020,
             Tag.NoFlac
         ],
     },
@@ -1651,20 +1641,22 @@ export const albums: AlbumInterface[] = [
         artist: "Rammstein",
         title: "Zeit",
         year: 2022,
-        spotifyUrl: "234",
+        spotifyUrl: "75OE7M0wduJyffbffehHuR",
         tags: [
             Tag.Legacy,
+            Tag.Year2021To2023,
             Tag.NoFlac
         ],
     },
     {
         artist: "Royal Blood",
-        title: "Back To The Water",
-        year: 2022,
-        spotifyUrl: "123",
+        title: "Back To The Water Below",
+        year: 2023,
+        spotifyUrl: "4B9IAqwQaPYHQi7kJcpPFQ",
         tags: [
             Tag.Legacy,
-            Tag.NoFlac
+            Tag.NoFlac,
+            Tag.YearUnknown
         ],
     },
     {
@@ -1674,9 +1666,8 @@ export const albums: AlbumInterface[] = [
         spotifyUrl: "2JJEIN6LvQJQTJDfnYdDAe",
         tags: [
             Tag.Legacy,
-            //Tag.YearUnknown,
-            //Tag.SourceRapidgator,
-            //Tag.X
+            Tag.YearUnknown,
+            Tag.SourceRapidgator
         ],
     },
     {
@@ -1686,9 +1677,8 @@ export const albums: AlbumInterface[] = [
         spotifyUrl: "1C4NZ4GnwIRNY0glvRpOon",
         tags: [
             Tag.Legacy,
-            //Tag.YearUnknown,
-            //Tag.SourceRapidgator,
-            //Tag.X
+            Tag.YearUnknown,
+            Tag.SourceRapidgator
         ],
     },
     {
@@ -1698,9 +1688,8 @@ export const albums: AlbumInterface[] = [
         spotifyUrl: "27evZfDFySSv4dcje8afMI",
         tags: [
             Tag.Legacy,
-            //Tag.YearUnknown,
-            //Tag.SourceFlacMusicFinder,
-            //Tag.X
+            Tag.YearUnknown,
+            Tag.SourceFlacMusicFinder,
         ],
     },
     {
@@ -1710,9 +1699,9 @@ export const albums: AlbumInterface[] = [
         spotifyUrl: "4Q1HXCFg84PfQRZlPCA4SH",
         tags: [
             Tag.Legacy,
-            //Tag.YearUnknown,
-            //Tag.OlxVinyl,
-            //Tag.SourceSoulseek
+            Tag.YearUnknown,
+            Tag.OlxVinyl,
+            Tag.SourceSoulseek
         ],
     },
 ]
