@@ -15,6 +15,7 @@ export const AppContext = createContext<ContextInterface>({
   query: "",
   selectedTags: [],
   sorting: Sorting.ByArtistAscending,
+  isLegacy: false,
   setAlbum: (): void => {
     throw new Error("Function not implemented.");
   },
@@ -27,6 +28,9 @@ export const AppContext = createContext<ContextInterface>({
   setSorting: (): void => {
     throw new Error("Function not implemented.");
   },
+  setIsLegacy: (): void => {
+    throw new Error("Function not implemented.");
+  },
 });
 
 export const AppContextProvider: FC<ContextProviderInterface> = ({ children }) => {
@@ -35,11 +39,17 @@ export const AppContextProvider: FC<ContextProviderInterface> = ({ children }) =
   const [query, setQuery] = useState<string>("");
   const [selectedTags, setSelectedTags] = useState<Tag[]>([]);
   const [sorting, setSorting] = useState<Sorting>(Sorting.ByArtistAscending);
+  const [isLegacy, setIsLegacy] = useState<boolean>(false);
+
+  const categoryAlbums = useMemo(
+    () => albumData.filter((album) => album.tags.includes(Tag.Legacy) === isLegacy),
+    [isLegacy]
+  );
 
   const tagCounts = useMemo(() => {
     const counts = new Map<Tag, number>();
-    albumData.forEach((album: AlbumInterface) => {
-      new Set(album.tags).forEach((tag) => {
+    categoryAlbums.forEach((album: AlbumInterface) => {
+      new Set(album.tags.filter((tag) => tag !== Tag.Legacy)).forEach((tag) => {
         counts.set(tag, (counts.get(tag) ?? 0) + 1);
       });
     });
@@ -47,11 +57,11 @@ export const AppContextProvider: FC<ContextProviderInterface> = ({ children }) =
     return Array.from(counts, ([tag, count]) => ({ tag, count })).sort((a, b) =>
       a.tag.localeCompare(b.tag)
     );
-  }, []);
+  }, [categoryAlbums]);
 
   const filteredAlbums = useMemo(
     () =>
-      albumData
+      categoryAlbums
         .filter((album: AlbumInterface) => {
           return (
             album.artist.toLowerCase().includes(query) ||
@@ -84,7 +94,7 @@ export const AppContextProvider: FC<ContextProviderInterface> = ({ children }) =
               return Math.random() - 0.5;
           }
         }),
-    [query, selectedTags, sorting]
+    [categoryAlbums, query, selectedTags, sorting]
   );
 
   useEffect(() => {
@@ -102,6 +112,7 @@ export const AppContextProvider: FC<ContextProviderInterface> = ({ children }) =
         query: query,
         selectedTags: selectedTags,
         sorting: sorting,
+        isLegacy: isLegacy,
         setAlbum: (spotifyUrl: string | undefined) => {
           const album = filteredAlbums.find((album) => album.spotifyUrl === spotifyUrl);
           setAlbum(album);
@@ -109,6 +120,7 @@ export const AppContextProvider: FC<ContextProviderInterface> = ({ children }) =
         setQuery: setQuery,
         setSelectedTags: setSelectedTags,
         setSorting: setSorting,
+        setIsLegacy: setIsLegacy,
       }}
     >
       {children}

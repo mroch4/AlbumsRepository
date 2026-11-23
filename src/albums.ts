@@ -1,5 +1,6 @@
 import { AlbumInterface } from "./common/AlbumInterface";
 import { Tag } from "./common/TagEnum";
+
 export const albums: AlbumInterface[] = [
     {
         artist: "Audioslave",

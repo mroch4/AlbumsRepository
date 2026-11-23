@@ -10,8 +10,10 @@ export interface ContextInterface {
   query: string;
   selectedTags: Tag[];
   sorting: Sorting;
+  isLegacy: boolean;
   setAlbum: (spotifyUrl: string | undefined) => void;
   setQuery: (query: string) => void;
   setSelectedTags: (tags: Tag[]) => void;
   setSorting: (index: Sorting) => void;
+  setIsLegacy: (isLegacy: boolean) => void;
 }

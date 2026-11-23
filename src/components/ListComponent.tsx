@@ -11,12 +11,35 @@ export const ListComponent = (): JSX.Element => {
     setQuery,
     setSelectedTags,
     tagCounts,
+    isLegacy,
+    setIsLegacy,
   } = useAppContext();
 
   return (
     <React.Fragment>
       <section className="d-flex flex-wrap align-content-start albums-list mx-2">
         <div className="w-100 mb-3 text-center">
+          <div aria-label="Album collection" className="nav nav-pills justify-content-center mb-3" role="tablist">
+            {[false, true].map((legacy) => (
+              <button
+                aria-selected={isLegacy === legacy}
+                className={`btn m-1 ${isLegacy === legacy ? "btn-secondary" : "btn-outline-secondary"}`}
+                id={legacy ? "legacy-tab" : "non-legacy-tab"}
+                key={legacy ? "legacy" : "non-legacy"}
+                onClick={() => {
+                  if (isLegacy !== legacy) {
+                    setIsLegacy(legacy);
+                    setQuery("");
+                    setSelectedTags([]);
+                  }
+                }}
+                role="tab"
+                type="button"
+              >
+                {legacy ? "Legacy" : "Non-legacy"}
+              </button>
+            ))}
+          </div>
           <div aria-label="Filter by tags" id="tag-filter" role="group">
             {tagCounts.map(({ tag, count }) => (
               <button

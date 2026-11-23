@@ -15,7 +15,7 @@ export const HeaderComponent = (): JSX.Element => {
             setSelectedTags([]);
           }}
         >
-          Albums Repository <sup>({albumsCount})</sup>
+          Albums Repository: {albumsCount}
         </Navbar.Brand>
         <SearchComponent />
       </div>
