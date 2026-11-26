@@ -1564,7 +1564,7 @@ export const albums: AlbumInterface[] = [
         tags: [
             Tag.Legacy,
             Tag.SourceRapidgator,
-            Tag.Year2025Now
+            Tag.Year2023To2025
         ],
     },
     {
@@ -1702,7 +1702,7 @@ export const albums: AlbumInterface[] = [
             Tag.Legacy,
             Tag.YearUnknown,
             Tag.OlxVinyl,
-            Tag.SourceSoulseek
+            Tag.NoFlac
         ],
     },
 ]
